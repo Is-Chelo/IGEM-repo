@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root{
     --azul:#00507D;
@@ -6,15 +7,40 @@
     --morado:#7B0068;
     --verde:#6DC72A;
 }
-
-h1, h4{
+body{
     font-family: 'Righteous', cursive;
+   
+}
+
+.titulo-principal{
+    margin-top: 2vh;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+article, section{
+    margin-top: 60px;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-morado{
+    color: var(--morado);
+}
+
+.text-azul{
+    color: var(--azul);
+}
+.text-verde{
+    color: var(--verde);
 }
 
 .pic-wrapper {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 60%;
+    height: 70vh;
     overflow: hidden;
 }
 
@@ -25,12 +51,8 @@ figure {
     width: 100%;
     height: 100%;
     opacity: 0;
-    
     /*animation*/
     animation: slideShow 24s linear infinite 0s;
-    -o-animation: slideShow 24s linear infinite 0s;
-    -moz-animation: slideShow 24s linear infinite 0s;
-    -webkit-animation: slideShow 24s linear infinite 0s;
 }
 
 .pic-1 {
@@ -41,27 +63,18 @@ figure {
 
 .pic-2 {
     animation-delay: 6s;
-    -o-animation-delay: 6s;
-    -moz--animation-delay: 6s;
-    -webkit-animation-delay: 6s;
-    background: url('archivos-InclusivityAward/imágenes/T--Bolivia--InclusivityAward_img1.png') no-repeat center center;
+    background: url('http://cdn.morguefile.com/imageData/public/files/g/GaborfromHungary/06/p/74fea178af5c36b5303625ffeacd8454.jpg') no-repeat center center;
     background-size: cover;
 }
 
 .pic-3 {
     animation-delay: 12s;
-    -o-animation-delay: 12s;
-    -moz--animation-delay: 12s;
-    -webkit-animation-delay: 12s;
     background: url('archivos-InclusivityAward/imágenes/T--Bolivia--InclusivityAward_img1.png') no-repeat center center;
     background-size: cover;
 }
 
 .pic-4 {
     animation-delay: 18s;
-    -o-animation-delay: 18s;
-    -moz--animation-delay: 18s;
-    -webkit-animation-delay: 18s;
     background: url('archivos-InclusivityAward/imágenes/T--Bolivia--InclusivityAward_img1.png') no-repeat center center;
     background-size: cover;
 }
@@ -96,24 +109,36 @@ figure {
     }
 }
 
+.fondo-banner{
+    width: 100vw;
+    height: 100%;
+    background-image: linear-gradient(to right, var(--azul) , var(--morado));
+    opacity: 0.4;
+    position: absolute;
+    padding-bottom: 100px;  
+    
+}
+
 .text-banner{
     width: 100vw;
     height: 100%;
-    /* background-image: linear-gradient(to right, var(--azul) , var(--morado)); */
-    padding-bottom: 100px;  
+    padding-bottom: 10vh;  
+    position: relative;
 }
-h1{
-    margin-top: 2vh;
-    font-size: 80px;
-    font-weight: 600;
-    color: white;
+
+.fila-banner{
+    padding-left: 10vw;
+     z-index: 10;
 }
+
+
 
 .logo-arsenito{
     margin-left: 20px;
-    width: 4vw;
-    height: 4vw;
+    width: 100px;
+    height: 100px;
 }
+
 .title-small{
     color: var(--morado);
     font-weight: 600;
@@ -137,9 +162,9 @@ h1{
         margin-left: 0;
         padding-bottom: 0;
     }
-    h1{
+    .titulo-principal{
         margin-top: 2vh;
-        font-size: 40px;
+        font-size: 50px;
         font-weight: 400;
         color: white;
     }
@@ -149,3 +174,142 @@ h1{
         justify-content: center;
     }
 }
+
+
+.nav-item{
+    margin-left: 80px;
+    font-size: 18px; 
+}
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:hover{
+    color: var(--morado) !important;
+}
+
+#nav{
+    background-color: transparent !important;
+}
+
+.my-nav{
+    
+    background-image: linear-gradient(to right,#7B0068, #00507D );
+}
+
+/* Card Coordinators */
+
+.card-2 {
+  max-width: 340px;
+  margin: auto;
+  overflow-y: auto;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: white;
+  display: flex;
+  transition: 0.3s;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+.card-2 {
+  height: 270px;
+}
+
+.card-header-2 {
+  position: relative;
+  display: flex;
+  height: 200px;
+  flex-shrink: 0;
+  width: 100%;
+  transition: 0.3s;
+}
+.card-header-2 * {
+  transition: 0.3s;
+}
+
+.card-cover {
+    background-image: linear-gradient(to right,#7B0068, #00507D );
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    height: 160px;
+    left: 0;
+    will-change: top;
+    background-size: cover;
+    filter: blur(30px);
+    transform: scale(1.2);
+}
+
+.card-avatar {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-64px);
+}
+
+.card-fullname {
+  top: 228px;
+  position: absolute;
+  bottom: 0;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  transform: translateY(-10px) translateX(-50%);
+  left: 50%;
+}
+
+.card-jobtitle {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  white-space: nowrap;
+  font-weight: 500;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-7px);
+}
+
+.card-main {
+  position: relative;
+  flex: 1;
+  display: flex;
+  padding-top: 10px;
+  flex-direction: column;
+}
+
+.card-subtitle {
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.card-desc {
+  line-height: 1.6;
+  color: #636b6f;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+}
+
+.bg{
+   
+    background-image: linear-gradient(to right, #00507dd9 , #7b006829);
+    padding: 50px
+}
+/* end coordinators */
