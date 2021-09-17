@@ -173,6 +173,13 @@ figure {
         align-items: end;
         justify-content: center;
     }
+    .text-video{
+        background-color: var(--azul);
+        width: 100%;
+        min-height: 34vh;
+        padding: 56px;
+
+    }
 }
 
 
@@ -197,119 +204,193 @@ figure {
     background-image: linear-gradient(to right,#7B0068, #00507D );
 }
 
-/* Card Coordinators */
 
-.card-2 {
-  max-width: 340px;
-  margin: auto;
-  overflow-y: auto;
-  position: relative;
-  z-index: 1;
-  overflow-x: hidden;
-  background-color: white;
-  display: flex;
-  transition: 0.3s;
-  flex-direction: column;
-  border-radius: 10px;
-  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+
+
+
+/* PRUEBA DE OTRAS CARD PARA COODINATORS */
+
+a {
+	color: var(--morado);
+    text-decoration: none;
 }
 
-.card-2 {
-  height: 270px;
+a:hover {
+    color: var(--azul);
 }
 
-.card-header-2 {
-  position: relative;
-  display: flex;
-  height: 200px;
-  flex-shrink: 0;
-  width: 100%;
-  transition: 0.3s;
+/*  Team Starts */
+.team-members {
+    margin-top: 50px;
+	transform: rotate(-45deg);
 }
-.card-header-2 * {
-  transition: 0.3s;
+.team-members li > div {
+	float: left;
+	width: 20%;
 }
 
-.card-cover {
-    background-image: linear-gradient(to right,#7B0068, #00507D );
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    height: 160px;
-    left: 0;
-    will-change: top;
-    background-size: cover;
-    filter: blur(30px);
-    transform: scale(1.2);
+.team-members li:nth-child(2) > div:first-child {
+	margin-left: 20%;
 }
 
-.card-avatar {
-  width: 100px;
-  height: 100px;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-  -o-object-position: center;
-     object-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(-64px);
+.team-members li:last-child > div:first-child {
+	margin-left: 40%;
 }
 
-.card-fullname {
-  top: 228px;
-  position: absolute;
-  bottom: 0;
-  font-size: 22px;
-  font-weight: 400;
-  text-align: center;
-  white-space: nowrap;
-  transform: translateY(-10px) translateX(-50%);
-  left: 50%;
+.member-details > div {
+	background-color: #ddd;
+	margin: 5px;
+}
+.member-details img {
+	transform: rotate(45deg) translate(0, 15px) scale(1.2);
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
-.card-jobtitle {
-  position: absolute;
-  bottom: 0;
-  font-size: 11px;
-  white-space: nowrap;
-  font-weight: 500;
-  opacity: 0.7;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  margin: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(-7px);
+/* hover content - style */
+.member-details > div {
+	position: relative;
+	overflow: hidden;
 }
 
-.card-main {
-  position: relative;
-  flex: 1;
-  display: flex;
-  padding-top: 10px;
-  flex-direction: column;
+.member-info {
+	position: absolute;
+	top: 50%;
+	transform: rotate(45deg) translate(-12px, 15px);
+	left: 0;
+	right: 0;
+	z-index: 2;
+	text-align: center;
 }
 
-.card-subtitle {
-  font-weight: 700;
-  font-size: 13px;
-  margin-bottom: 8px;
+.member-info h3,
+.member-info p {
+	margin: 0;
+	color: #fff;
+	position: relative;
+	opacity: 0;
+	visibility: hidden;
 }
 
-.card-desc {
-  line-height: 1.6;
-  color: #636b6f;
-  font-size: 14px;
-  margin: 0;
-  font-weight: 400;
-  font-family: "DM Sans", sans-serif;
+.member-info h3 {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+	top: -100px;
 }
 
+.member-info p {
+	font-weight: 300;
+	font-size: 12px;
+	bottom: -150px;
+}
+
+.member-details > div:after {
+	content: '';
+	background-image: linear-gradient(45deg, rgba(228, 82, 69, .8) 50%, transparent 50%);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+}
+
+/* hover content - onhover */
+.member-details *,
+.member-details > div:after {
+	cursor: pointer;
+	transition: all .4s ease;
+}
+
+.member-details:hover *,
+.member-details:hover > div:after {
+	opacity: 1;
+	visibility: visible;
+}
+
+.member-details:hover .member-info h3 {
+	top: 0;
+}
+
+.member-details:hover .member-info p {
+	bottom: 0;
+}
+
+
+/* For centering elements - optional - Can use table,tablecell instead */
+.flex-center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-center > div:first-child {
+	order: 2;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width : 992px) {
+	.sm-no-flex {
+		display: block;
+	}
+	.sm-no-float {
+		float: none !important;
+	}
+	.sm-text-center {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width : 550px) {
+	.team-members li {
+		text-align: center;
+	}
+	.team-members li > div {
+		float: none;
+		display: inline-block;
+		width: 30%;
+		margin: 0 !important;
+	}
+	.team-members {
+		transform: rotate(0);
+	}
+	.member-details img {
+		transform: rotate(0) translate(0, 0);
+	}
+	.team-overview {
+		padding: 15px;
+	}
+	
+}
+
+@media only screen and (max-width : 399px) {
+	.team-members li > div {
+		width: 48%;
+	}
+}
+
+li{
+    list-style: none;
+}
 .bg{
-   
-    background-image: linear-gradient(to right, #00507dd9 , #7b006829);
-    padding-top: 30px
+    background-image: linear-gradient( 179deg, white, #00507d29);
 }
-/* end coordinators */
+
+
+
+/* VIDEOSSSSSSSSSSSS */
+.divVideos{
+    background-image: linear-gradient( 179deg, #00507d29, white);
+    padding:100px
+}
+
+.card-body{
+    height: 100%;
+    background-color: white;
+}
+
