@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Is-Chelo/IGEM-repo#readme",
   "dependencies": {
-    "aos": "^2.3.4"
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.1.1"
   }
 }
