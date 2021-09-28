@@ -399,3 +399,14 @@ figure {
     color: var(--morado);
     font-size: 20px;
 }
+
+
+.lista> li{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+.lista>li> a{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--azul);
+    margin-left: 10px; 
+}
