@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+:root {
+    --azul   : #00507D;
+    --celeste: #00C7DC;
+    --morado : #7B0068;
+    --verde  : #6DC72A;
+}
+
+body {
+    font-family: 'Righteous', cursive;
+    margin     : 0;
+    padding    : 0;
+}
+
+.titulo-principal {
+    margin-top : 2vh;
+    font-size  : 80px;
+    font-weight: 600;
+}
+
+article,
+section {
+    margin-top: 6em !important;
+
+    margin-bottom: 3em !important;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-morado {
+    color: var(--morado);
+}
+
+.text-azul {
+    color: var(--azul);
+}
+
+.text-verde {
+    color: var(--verde);
+}
+
+.pic-wrapper {
+    position: relative;
+    width   : 100%;
+    height  : 70vh;
+    overflow: hidden;
+}
+
+figure {
+    position : absolute;
+    top      : 0;
+    left     : 0;
+    width    : 100%;
+    height   : 100%;
+    opacity  : 0;
+    /*animation*/
+    animation: slideShow 24s linear infinite 0s;
+}
+
+.pic-1 {
+    opacity        : 1;
+    background     : url('Imagenes Design/T--Bolivia--design_banner.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.pic-2 {
+    animation-delay: 6s;
+    background     : url('Imagenes Design/T--Bolivia--design_banner.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.pic-3 {
+    animation-delay: 12s;
+    background     : url('Imagenes Design/T--Bolivia--design_banner.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.pic-4 {
+    animation-delay: 18s;
+    background     : url('Imagenes Design/T--Bolivia--design_banner.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
+/* keyframes*/
+
+@keyframes slideShow {
+    0% {
+        opacity  : 0;
+        transform: scale(1);
+    }
+
+    5% {
+        opacity: 1
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity  : 0;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity  : 0;
+        transform: scale(1);
+    }
+}
+
+.fondo-banner {
+    width           : 100vw;
+    height          : 100%;
+    background-image: linear-gradient(to right, var(--azul), transparent);
+    opacity         : 0.4;
+    position        : absolute;
+    padding-bottom  : 100px;
+}
+
+.text-banner {
+    width         : 100vw;
+    height        : 100%;
+    padding-bottom: 20vh;
+    position      : relative;
+    display: flex;
+    align-items: end;
+}
+
+.fila-banner {
+    padding-left: 10vw;
+    z-index     : 10;
+
+}
+
+.logo-arsenito {
+    margin-left: 20px;
+    width: 20%;
+    position: absolute;
+    /* height: 100px; */
+    right: 5%;
+    bottom: -20px
+}
+
+.title-small {
+    color      : var(--morado);
+    font-weight: 600;
+}
+
+.team {
+    display        : flex;
+    align-items    : end;
+    justify-content: start;
+}
+
+
+/* Pantalla abajo de los 750 pixeles */
+
+@media(max-width: 767px) {
+    .text-banner {
+        width          : 100vw;
+        height         : 70%;
+        display        : flex;
+        justify-content: center;
+        align-items    : end;
+        margin-left    : 0;
+        padding-bottom : 0;
+    }
+
+    .titulo-principal {
+        margin-top : 2vh;
+        font-size  : 50px;
+        font-weight: 400;
+        color      : white;
+    }
+
+    .team {
+        display        : flex;
+        align-items    : end;
+        justify-content: center;
+    }
+
+    .text-video {
+        background-color: var(--azul);
+        width           : 100%;
+        min-height      : 34vh;
+        padding         : 56px;
+    }
+
+    .nav-item {
+        margin-left: 30px;
+        font-size  : 18px;
+    }
+}
+
+.nav-item {
+    margin-left: 80px;
+    font-size  : 18px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: var(--celeste) !important;
+}
+
+#nav {
+    background-color: transparent !important;
+}
+
+
+
+.my-nav {
+    background-image: linear-gradient(to right, #7B0068, #00507D);
+    opacity         : 0.9;
+    transition      : .3s ease-in-out;
+}
+
+.hover-nav{
+    position: relative;
+}
+.nav-item:after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+    left: 0px;
+    bottom: 0px;
+}
+
+.nav-item:hover:after {
+    opacity: 1;
+    width: 100%;
+}
+
+/* HASTA AQUI ES EL BANNER Y NAVBAR */
+
+
+/* BANNER GRADIENTE */
+.banner-img {
+    padding         : 5vh;
+    /* background-image: linear-gradient(45deg, var(--azul), transparent); */
+    margin-top      : 7vh;
+    width           : 100%;
+    position: relative;
+
+}
+
+.banner-img-inv {
+    padding         : 5vh;
+    /* background-image: linear-gradient(45deg, transparent, var(--morado)); */
+    margin-top      : 7vh;
+    width           : 100%;
+}
+
+
+/* ANIMACION BG-GRADIENTE */
+.banner-gradient-anim {
+    height          : 70vh;
+    width           : 100%;
+    z-index         : -1;
+    position        : absolute;
+}
+
+.banner-gradient-anim:before,
+.banner-gradient-anim:after {
+    content  : "";
+    position : absolute;
+    left     : 0;
+    top      : 0;
+    height   : 100%;
+    width    : 100%;
+    z-index  : -1;
+    animation: fade-in 7s ease-in-out 0s infinite alternate forwards;
+}
+
+.banner-gradient-anim:before {
+    background: var(--celeste);
+    background: linear-gradient(135deg,  var(--azul) 0%, var(--celeste) 100%);
+}
+
+.banner-gradient-anim:after {
+    background         : var(--azul);
+    animation-direction: alternate-reverse;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+
+
+.banner-gradient-anim-morado {
+    height          : 40vh;
+    width           : 100%;
+    z-index         : -1;
+    position        : absolute;
+}
+
+.banner-gradient-anim-morado:before,
+.banner-gradient-anim-morado:after {
+    content  : "";
+    position : absolute;
+    left     : 0;
+    top      : 0;
+    height   : 100%;
+    width    : 100%;
+    z-index  : -1;
+    animation: fade-in 7s ease-in-out 0s infinite alternate forwards;
+}
+
+.banner-gradient-anim-morado:before {
+    background: var(--celeste);
+    background: linear-gradient(135deg,  var(--azul) 0%, var(--morado) 100%);
+}
+
+.banner-gradient-anim-morado:after {
+    background-image       : linear-gradient(45deg, transparent, var(--morado));
+    animation-direction: alternate-reverse;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+@media(max-width: 1037px){
+    .banner-gradient-anim {
+        height          : 55vh;
+        width           : 100%;
+        z-index         : -1;
+        position        : absolute;
+    }
+}
+
+@media(max-width: 755px){
+    .banner-gradient-anim {
+        height          : 90vh;
+        width           : 100%;
+        z-index         : -1;
+        position        : absolute;
+    }
+
+    .banner-gradient-anim-morado {
+        height: 58vh;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+    }
+}
+
+.img{
+    width: 90%;
+    height: 90%;
+
+}
+
+
+
+.click-img{
+    cursor: pointer;
+}
+
+.click-img:hover{
+    transform: scale(1.1);
+    transition: .3s;
+   
+}
+
+.my-modal{
+    background: #000000c4 !important;
+}
+
+.arrow-icons{
+    color: var(--morado);
+    font-size: 20px;
+}

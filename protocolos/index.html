@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolivia | Protocolos</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="protocolos.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- NavBar -->
+        <div class="nav-principal">
+            <nav class="navbar navbar-expand-lg navbar-light my-navbar fixed-top  py-4" id="nav">
+                <div class="container  d-md-flex">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler bg-white" onclick="navBarColor()" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon bg-white"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item hover-nav">
+                                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item hover-nav">
+                                <a class="nav-link" href="#">PROYECT</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    PARTS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item hover-nav">
+                                <a class="nav-link" href="#">HUMAN</a>
+                            </li>
+                            <li class="nav-item hover-nav">
+                                <a class="nav-link" href="#">PRACTICES</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Fin navbar -->
+
+
+        <!-- Banner de Imagenes -->
+
+        <div class="pic-wrapper">
+            <figure class="pic-1">
+            </figure>
+            <figure class="pic-2">
+            </figure>
+            <figure class="pic-3">
+            </figure>
+            <figure class="pic-4">
+            </figure>
+            <div class="fondo-banner ">
+            </div>
+            <div class="text-banner">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row fila-banner">
+                            <div class="team">
+                                <h4 class="title-small text-center text-md-start"><span class="text-white">TEAM</span>
+                                    BOLIVIA
+                                </h4>
+                            </div>
+                            <h1 class="text-center text-md-start text-white titulo-principal">DESIGN</h1>
+                            <p class="text-white text-white text-sm-center text-md-start">The work begins starting with the
+                                design of the bioparts</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class=" d-none d-md-block col-md-4">
+                        <img src="Imagenes Design/arsenito.png" class="logo-arsenito" alt=""  />
+                    </div>
+                </div>
+            </div>
+    </header>
+
+
+    <section>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="Imagenes Design/Plasmido azul.png" alt="" class="w-100 ">
+                </div>
+                <div class="col-md-8  d-flex align-items-center mb-3">
+                    <p>
+                        The development of whole-cell biosensors for heavy
+                        metals is widely described in the literature, within the
+                        iGEM competition many teams have explored various
+                        well-established design approaches. In an attempt to
+                        differentiate ourselves our team has decided to take a
+                        less explored approach for the design of our arsenic
+                        biosensor, based initalt on the work of Wang et al. (1) It
+                        relies mainly on 3 strategies:
+                    </p>
+                </div>
+                <h2 class="text-azul mt-5 mb-4">
+                    I. Control of intracellular density of arsR protein
+                </h2>
+                <p>
+                    Normally arsR regulates its own expression within the arsRDABC operon (2)
+                    and in whole-cell biosensors with a more conventional design, recent studies
+                    have been conducted where the expression of arsR has been placed under
+                    the control of constitutive promoters of different strengths, this has resulted in
+                    a finer and more comprehensive control of outputs. (3)
+                </p>
+                <p>
+                    A weak constitutive promoter controlling arsR expression results in a lower
+                    concentration of arsR protein in the bacterial cytosol, loosening the control of
+                    the expression that it exerts and the minimum concentration of arsenic
+                    necessary to activate the genetic constructs, in other words, the detection
+                    limit of the biosensor is improved. On the other hand, if an arsenic biosensor
+                    with a sensitivity for higher concentrations is required, the promoter can be
+                    changed to one of greater strength.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="banner-gradient-anim"></div>
+    <div class="banner-img">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-5 d-flex align-items-center text-md-end mb-5">
+                    <p class="text-white"><strong>Figure 1.</strong> Adjusting the intracellular
+                        receptor concentration allows manipulating
+                        the detection limit of the biosensor. a)
+                        Strong constitutive promoter: higher
+                        concentration of ArsR results in a higher
+                        concentration of Arsenic for the activation
+                        of the constructs. b) Weak constitutive
+                        promoter: lower ArsR concentration results
+                        in a lower Arsenic concentration for the
+                        activation of the constructs.</p>
+                </div>
+                <div class=" offset-md-1 col-md-6">
+                    <img src="Imagenes Design/T--Bolivia--design_fig1.png" alt="" class="img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section>
+        <div class="container">
+            <h2 class="text-azul mb-4">II. Using simple and cascading transcriptional amplifiers</h2>
+            <p>Upon activation of the constructs, the transcriptional signal generated will be
+                received by the HrpRS and/or RinA amplifier systems and will be scaled by a
+                gain factor to produce an enhanced output signal. Being able to predictably
+                scale a transcriptional signal provides a new level of control and flexibility
+                over the outputs of genetic constructs where low-level or saturated
+                transcription signals must be scaled to increase sensitivity. Like its electronic
+                counterparts, amplifier engineering is critically valuable in customizing signal
+                processing in cells for various applications. (4)</p>
+            <p>
+                <strong>HrpRS system :</strong> it is composed by the genetic components (hrpRS
+                and PhrpL) of the regulatory network of the hrp gene (hypersensitive
+                reaction and pathogenicity) for type III secretion in Pseudomonas
+                syringae . Activating hrpR and hrpS proteins results in the formation
+                of an ultrasensitive complex which binds a sequence up-stream the
+                hrpL promoter (σ54 factor dependent) for remodeling the closed
+                transcription σ54-RNAP-hrpL complex into a open one through ATP
+                hydrolysis for finally promoting transcription. (5)
+            </p>
+        </div>
+    </section>
+
+
+    <div class="banner-gradient-anim-morado"></div>
+    <div class="banner-img-inv">
+        <div class="container">
+            <div class="row ">
+                <div class=" offset-md-1 col-md-6 mb-5">
+                    <img src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg" alt=""
+                        class="img">
+                </div>
+                <div class="col-md-5 d-flex align-items-center text-md-end ">
+                    <p class="text-white"><strong>Figure 2.</strong> The HrpR and HrpS proteins form
+                        a hexameric complex that functions as an
+                        enhancer element that comes into contact
+                        with RNA polymerase and σ54 factor, which
+                        in turn are positioned on the PhrpL
+                        promoter, activating transcription in an
+                        ultra-sensitive and amplified way.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <p class="">
+            RinA system : consists of a family of phage-encoded proteins that
+            act as activators for the transcription of late operons in a large
+            group of Staphylococcus aureus phages . It has the ability to bind
+            to the PrinA_p80 promoter sequence where it promotes
+            transcription of down-stream elements in an ultrasensitive way. (6)
+        </p>
+    </div>
+    <section>
+        <div class="container">
+            <h2 class="text-azul mb-4">III. Chromoprotein as a reporter</h2>
+            <p>
+                After processing the transcriptional signal, it is necessary to convert it to a
+                measurable type of signal, in our case this is possible through the use of a
+                reporter gene that produces a colored protein observable to the naked eye.
+                Chromoproteins have certain advantages over other fluorescent proteins,
+                such as having dark colors under ambient light that allow inexpensive
+                analysis without specialized instruments. They also avoid problems due to
+                background fluorescence, UV-induced bleaching, cell damage, and the
+                need for eye and skin protection. Applications of chromoproteins include
+                markers in living organisms for cloning (7), teaching (8) and biosensors. (9)
+            </p>
+        </div>
+    </section>
+
+    <div class="banner-gradient-anim"></div>
+    <div class="banner-img">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-5 d-flex align-items-center text-md-end mb-5">
+                    <p class="text-white"><strong>Figure 3.</strong> Adjusting the intracellular
+                        receptor concentration allows manipulating
+                        the detection limit of the biosensor. a)
+                        Strong constitutive promoter: higher
+                        concentration of ArsR results in a higher
+                        concentration of Arsenic for the activation
+                        of the constructs. b) Weak constitutive
+                        promoter: lower ArsR concentration results
+                        in a lower Arsenic concentration for the
+                        activation of the constructs.</p>
+                </div>
+                <div class=" offset-md-1 col-md-6">
+                    <img src="Imagenes Design/T--Bolivia--design_fig1.png" alt="" class="img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <p class="">
+            <strong>mRFP1E Chromoprotein:</strong> its a variant of the monomeric red fluorescent
+            protein 1 (mRFP1) gene that was codon optimized for E. coli (abbreviated
+            mRFP1E). It produces a dark red color observable to the naked eye and
+            has a fluorescent capacity with an excitation spectrum at 582 nm and an
+            emission spectrum at 606 nm. Is low molecular weight (55 kDa ) and it has
+            been reported that its toxicity on E. coli is considerably lower than other
+            chromoproteins, which is a great advantage for its use as a reporter, its
+            maturation time is 18 - 24 hours in the presence of oxygen. Orange, pink,
+            magenta and violet color variants have also been generated with the same
+            characteristics (10)
+        </p>
+        <p>Red fluorescent proteins such as mRFP1 have an absorption spectrum
+            that can overlap with optical density measurements of cultures at 600 nm
+            (OD600), causing interference and overestimations.111 For this reason we
+            have opted for the violet variant of this chromoprotein, mRFP1-Violet , its
+            absorption spectrum is in the region of 350 - 450 nm, eliminating the
+            interferences with OD600. It has been generated by mutations of the
+            original chromoprotein fluorophore site and retains its characteristics such
+            as fluorescence, maturation time and low toxicity. (10)</p>
+    </div>
+
+    <section>
+        <div class="container">
+            <h2 class="text-center text-azul mb-4">ARSENITO IN DETAIL</h2>
+            <p>We apply the aforementioned strategies to generate 4 genetic constructs
+                that offer different ranges of sensitivity to arsenic. Transformed into 4
+                different E. coli BL21 strains, we can generate traffic light patterns visible
+                to the naked eye and easy to interpret.</p>
+        </div>
+    </section>
+
+    <div class="banner-gradient-anim-morado"></div>
+    <div class="banner-img">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-5 d-flex align-items-center text-md-end mb-5">
+                    <p class="text-white"><strong>Figure 4.</strong>The different arsenic
+                        sensitivities of the constructs
+                        allow semi-quantitative
+                        interpretation of results by
+                        means of traffic light patterns
+                        observable with the naked eye.</p>
+                </div>
+                <div class=" offset-md-1 col-md-6">
+                    <img src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg" alt=""
+                        class="img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <h2 class="text-azul mb-4">1. As0 Construct (≥ 0.5 ppb [As] sensitivity):</h2>
+            <p>The detection module consists of a weak constitutive promoter
+                (BBa_J23109) that is in charge of the expression of the arsR protein
+                (BBa_J15101) , next is the processing module that is made up by Pars
+                inducible promoter (BBa_K190015) , which receives the transcriptional
+                signal, and a double amplifying cascade (HrpRS-pHrpL-RinA), finally is the
+                output module made up by an inducible promoter pRinA-p80 that receives
+                the amplified signal of the cascade and promotes the expression of the
+                reporter gene mRFP1 -Violet.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        
+        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+            data-bs-content="Click Me, Please" onclick="showModal('modal1')">
+            <div class="row m-0 p-0 text-center d-lg-none">
+                <small>Click me, Please</small>
+            </div>
+            <img src="Imagenes Design/T--Bolivia--design_fig5.png" alt="" class="w-100 click-img">
+        </span>
+    </div>
+
+
+
+    <section>
+        <div class="container">
+            <h2 class="text-azul mb-4">2. As2 Construct(≥ 3 ppb [As] Sensitivity):</h2>
+            <p>The detection module consists of a weak constitutive promoter
+                (BBa_J23109) that is in charge of the expression of the arsR protein
+                (BBa_J15101), next is the processing module that is made up by Pars
+                inducible promoter (BBa_K190015) , which receives the transcriptional
+                signal, and a simple transcriptional amplifier (HrpRS) , finally is the output
+                module made up by an inducible pHrpL promoter that receives the
+                amplified signal from the cascade and promotes the expression of the
+                reporter gene mRFP-Violet.</p>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+            data-bs-content="Click Me, Please" onclick="showModal('modal2')">
+            <div class="row m-0 p-0 text-center d-lg-none">
+                <small>Click me, Please</small>
+            </div>
+            <img src="Imagenes Design/T--Bolivia--design_fig6.png" alt="" class="w-100 click-img">
+
+        </span>
+
+    </div>
+
+
+    <section>
+        <div class="container">
+            <h2 class="text-azul mb-4">3. As4 Construct (≥ 10 ppb [As] Sensitivity)</h2>
+            <p>The detection module consists of a constitutive promoter of medium
+                strength (BBa_J23115) that is in charge of the expression of the arsR
+                protein (BBa_J15101) , in this construct a processing module is not
+                included and immediately afterwards is the output module made up by
+                Pars inducible promoter (BBa_K190015) that receives the signal from the
+                detection module and promotes the expression of the reporter gene
+                mRFP1-Violet.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+            data-bs-content="Click Me, Please" onclick="showModal('modal3')">
+            <div class="row m-0 p-0 text-center d-lg-none">
+                <small>Click me, Please</small>
+            </div>
+            <img src="Imagenes Design/T--Bolivia--design_fig6.png" alt="" class="w-100">
+        </span>
+    </div>
+
+
+
+    <section>
+        <div class="container">
+            <h2 class="text-azul mb-4">4. As5 Construct (≥ 50 ppb [As] Sensitivity)</h2>
+            <p>The detection module consists of a high-strength constitutive promoter
+                (BBa_J23105) that is in charge of the expression of the arsR protein
+                (BBa_J15101) , a processing module is not included in this construct and
+                immediately afterwards is the output module made up by the inducible
+                promoter Pars (BBa_K190015) that receives the signal from the detection
+                module and finally promotes the expression of the reporter gene mRFP1-
+                Violet.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+            data-bs-content="Click Me, Please" onclick="showModal('modal4')">
+            <div class="row m-0 p-0 text-center d-lg-none">
+                <small>Click me, Please</small>
+            </div>
+            <img src="Imagenes Design/T--Bolivia--design_fig7.png" alt="" class="w-100">
+        </span>
+    </div>
+
+    <section>
+        <div class="container">
+            <h2 class="text-azul mb-4">5. Other considerations:</h2>
+            <p>The detection module consists of a high-strength constitutive promoter
+
+        </div>
+    </section>
+
+    <div class="container">
+        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+            data-bs-content="Click Me, Please" onclick="showModal('modal5')">
+            <div class="row m-0 p-0 text-center d-lg-none">
+                <small>Click me, Please</small>
+            </div>
+            <img src="Imagenes Design/T--Bolivia--design_fig7.png" alt="" class="w-100">
+        </span>
+    </div>
+
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <!-- Primer modal-->
+    <div class="modal fade my-modal" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="row d-flex justify-content-end m-0 p-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Imagenes Design/T--Bolivia--design_fig5.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Imagenes Design/T--Bolivia--design_fig6.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Imagenes Design/T--Bolivia--design_fig7.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+
+                            <i class="fa fa-chevron-left arrow-icons"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <i class="fa fa-chevron-right arrow-icons"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+<script>
+    window.addEventListener('scroll', (e) => {
+        let y = window.scrollY;
+        if (y >= 500) {
+            document.getElementById('nav').classList.add('my-nav')
+        } else {
+            document.getElementById('nav').classList.remove('my-nav')
+        }
+    })
+
+    function navBarColor() {
+        document.getElementById('nav').classList.add('my-nav')
+    }
+
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+
+
+    function showModal(idModal) {
+
+        var modalRegister = new bootstrap.Modal(document.getElementById(idModal), {
+            keyboard: false
+        })
+        modalRegister.show()
+    }
+</script>
+
+
+
+</html>
