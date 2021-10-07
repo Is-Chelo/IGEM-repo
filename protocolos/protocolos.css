@@ -8,6 +8,7 @@
     --celeste: #00C7DC;
     --morado : #7B0068;
     --verde  : #6DC72A;
+    --font-size-p: 16px ;
 }
 
 body {
@@ -31,6 +32,7 @@ section {
 
 p {
     font-family: 'Open Sans', sans-serif;
+    font-size: var(--font-size-p);
 }
 
 .text-morado {
@@ -258,9 +260,7 @@ figure {
 }
 
 .banner-img-inv {
-    padding         : 5vh;
-    /* background-image: linear-gradient(45deg, transparent, var(--morado)); */
-    margin-top      : 7vh;
+    padding         : 10vh;
     width           : 100%;
 }
 
@@ -309,7 +309,7 @@ figure {
 
 
 .banner-gradient-anim-morado {
-    height          : 40vh;
+    height          : 50vh;
     width           : 100%;
     z-index         : -1;
     position        : absolute;
@@ -350,27 +350,63 @@ figure {
 
 @media(max-width: 1037px){
     .banner-gradient-anim {
-        height          : 55vh;
+        height          : 56vh;
         width           : 100%;
         z-index         : -1;
         position        : absolute;
     }
 }
 
-@media(max-width: 755px){
+
+
+@media(max-width: 770px){
     .banner-gradient-anim {
-        height          : 90vh;
+        height          : 50vh;
         width           : 100%;
         z-index         : -1;
         position        : absolute;
     }
 
     .banner-gradient-anim-morado {
-        height: 58vh;
+        height: 45vh;
         width: 100%;
         z-index: -1;
         position: absolute;
     }
+    .banner-img-inv {
+        padding         : 10vh;
+        width           : 100%;
+    }
+    
+}
+@media(max-width: 764px){
+    .banner-gradient-anim {
+        height          : 98vh;
+        width           : 100%;
+        z-index         : -1;
+        position        : absolute;
+    }
+
+    .banner-gradient-anim-morado {
+        height: 54vh;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+    }
+    .banner-img-inv {
+        padding         : 0vh;
+        width           : 100%;
+    }
+    
+}
+@media (max-width: 596px){
+
+.banner-gradient-anim {
+    height: 89vh;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
 }
 
 .img{
@@ -409,4 +445,13 @@ figure {
     font-family: 'Open Sans', sans-serif;
     color: var(--azul);
     margin-left: 10px; 
+}
+
+
+.img-back{
+    position: absolute;
+    z-index: -10;
+    opacity: 0.4;
+    overflow-x: hidden;
+    right: 0;
 }
