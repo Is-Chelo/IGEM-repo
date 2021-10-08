@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+:root {
+    --azul   : #00507D;
+    --celeste: #00C7DC;
+    --morado : #7B0068;
+    --verde  : #6DC72A;
+    --font-size-p: 16px ;
+}
+
+body {
+    font-family: 'Righteous', cursive;
+    margin     : 0;
+    padding    : 0;
+}
+
+.titulo-principal {
+    margin-top : 2vh;
+    font-size  : 80px;
+    font-weight: 600;
+    font-family:'Righteous', cursive; ;
+}
+
+article,
+section {
+    margin-top: 6em !important;
+
+    margin-bottom: 3em !important;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--font-size-p);
+    line-height: 30px;
+}
+
+.text-morado {
+    color: var(--morado);
+}
+
+.text-azul {
+    color: var(--azul);
+}
+.text-celeste {
+    color: var(--celeste);
+}
+
+.text-verde {
+    color: var(--verde);
+}
+
+.pic-wrapper {
+    position: relative;
+    width   : 100%;
+    height  : 70vh;
+    overflow: hidden;
+}
+
+figure {
+    position : absolute;
+    top      : 0;
+    left     : 0;
+    width    : 100%;
+    height   : 100%;
+    opacity  : 0;
+    /*animation*/
+    animation: slideShow 24s linear infinite 0s;
+}
+
+.pic-1 {
+    opacity        : 1;
+    background     : url('ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_banner.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.pic-2 {
+    animation-delay: 6s;
+    background     : url('ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_banner.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.pic-3 {
+    animation-delay: 12s;
+    background     : url('ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_banner.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.pic-4 {
+    animation-delay: 18s;
+    background     : url('ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_banner.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
+/* keyframes*/
+
+@keyframes slideShow {
+    0% {
+        opacity  : 0;
+        transform: scale(1);
+    }
+
+    5% {
+        opacity: 1
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity  : 0;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity  : 0;
+        transform: scale(1);
+    }
+}
+
+.fondo-banner {
+    width           : 100vw;
+    height          : 100%;
+    background-image: linear-gradient(to right, var(--azul), var(--celeste));
+    opacity         : 0.4;
+    position        : absolute;
+    padding-bottom  : 100px;
+}
+
+.text-banner {
+    width         : 100vw;
+    height        : 100%;
+    padding-bottom: 13vh;
+    position      : relative;
+    display: flex;
+    align-items: end;
+}
+
+.fila-banner {
+    padding-left: 10vw;
+    z-index     : 10;
+
+}
+
+.logo-arsenito {
+    margin-left: 20px;
+    width: 20%;
+    position: absolute;
+    /* height: 100px; */
+    right: 5%;
+    bottom: -20px
+}
+
+.title-small {
+    color      : var(--celeste);
+    font-weight: 600;
+}
+
+.team {
+    display        : flex;
+    align-items    : end;
+    justify-content: start;
+}
+
+
+/* Pantalla abajo de los 750 pixeles */
+
+@media(max-width: 767px) {
+    .text-banner {
+        width          : 100vw;
+        height         : 70%;
+        display        : flex;
+        justify-content: center;
+        align-items    : end;
+        margin-left    : 0;
+        padding-bottom : 0;
+    }
+
+    .titulo-principal {
+        margin-top : 2vh;
+        font-size  : 50px;
+        font-weight: 400;
+        color      : white;
+    }
+
+    .team {
+        display        : flex;
+        align-items    : end;
+        justify-content: center;
+    }
+
+    .text-video {
+        background-color: var(--azul);
+        width           : 100%;
+        min-height      : 34vh;
+        padding         : 56px;
+    }
+
+    .nav-item {
+        margin-left: 30px;
+        font-size  : 18px;
+    }
+}
+
+.nav-item {
+    margin-left: 80px;
+    font-size  : 18px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: var(--celeste) !important;
+}
+
+#nav {
+    background-color: transparent !important;
+}
+
+
+
+.my-nav {
+    background-image: linear-gradient(to right,var(--azul), var(--celeste));
+    opacity         : 0.9;
+    transition      : .3s ease-in-out;
+}
+
+.hover-nav{
+    position: relative;
+}
+.nav-item:after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+    left: 0px;
+    bottom: 0px;
+}
+
+.nav-item:hover:after {
+    opacity: 1;
+    width: 100%;
+}
+
+/* HASTA AQUI ES EL BANNER Y NAVBAR */
+
+
+
+
+
+/* MENU LATERAL ICONOs */
+
+.menulateral {
+    margin-left: 10px;
+    position: sticky;
+    top: 150px;
+    border-right: 5px solid;
+    border-color: #00507D;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid #000; */
+    width: 250px;
+}
+
+
+.box-icon{
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}   
+
+.diviconMenu{
+    border: 2px solid var(--celeste);
+    border-style: dashed; border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-right:20px ;
+    padding: 10px;
+    border-radius: 50%;    
+}
+
+.iconMenu{
+    width: 40px;
+    height: 40px;
+    
+}
+
+.text-menu{
+    text-transform: uppercase;
+}
+
+/* seleccion de menu  */
+
+.box-icon-select{
+    color: var(--celeste);
+}
+
+
+.bg-azul{
+    background-image: linear-gradient(270deg,#00507d33 ,transparent);
+}
+
+
+/* ESTILOS DE SLIDER CAROUSEL */
+
+  body .credit {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #000;
+  }
+  body .options {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    width: 90%;
+    height: 600px;
+  }
+  
+  @media screen and (max-width: 718px) {
+    body .options {
+      min-width: 520px;
+    }
+    body .options .option:nth-child(5) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 638px) {
+    body .options {
+      min-width: 440px;
+    }
+    body .options .option:nth-child(4) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 558px) {
+    body .options {
+      min-width: 360px;
+    }
+    body .options .option:nth-child(3) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 478px) {
+    body .options {
+      min-width: 280px;
+    }
+    body .options .option:nth-child(2) {
+      display: none;
+    }
+  }
+  body .options .option {
+    position: relative;
+    overflow: hidden;
+    min-width: 60px;
+    margin: 10px;
+    background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
+    background-size: auto 120%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  }
+
+  
+  body .options .option.active {
+    flex-grow: 10000;
+    margin: 0px;
+    border-radius: 40px;
+    background-size: auto 100%;
+  }
+  body .options .option.active .shadow {
+    box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+  }
+  body .options .option.active .label {
+    bottom: 20px;
+    left: 20px;
+  }
+ 
+  body .options .option:not(.active) {
+    flex-grow: 1;
+    border-radius: 30px;
+  }
+  body .options .option:not(.active) .shadow {
+    bottom: -40px;
+    box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+  }
+  body .options .option:not(.active) .label {
+    bottom: 10px;
+    left: 10px;
+  }
+  
+  
+  body .options .option .label {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    height: 40px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  }
+  body .options .option .label .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+  }
+  
+  
+.lista>li{
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    line-height: 50px;
+}
