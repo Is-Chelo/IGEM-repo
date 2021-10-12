@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-/* .heart {
-    background-color: #ff586b!important;
-  }
-  .book {
-    background-color: #00b7c4!important;
-  }
-  .brain {
-    background-color: #8bc34a!important;
-  } */
 
 :root {
     --azul   : #00507D;
@@ -17,6 +8,8 @@
     --morado : #7B0068;
     --verde  : #6DC72A;
     --bg-azul: #6ec72a0a;
+    --tamanioletras :16px;
+    --bg-celeste :#00c6dc25;
 }
 
 body {
@@ -38,8 +31,17 @@ section {
 
 p {
     font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    /* text-align: center; */
+    font-size: var(--tamanioletras);
 }
+li{
+    font-size: var(--tamanioletras);
 
+}
+h2{
+    text-align: center;
+}
 .text-morado {
     color: var(--morado);
 }
@@ -266,7 +268,7 @@ figure {
     position       : sticky;
     top            : 150px;
     border-right   : 5px solid;
-    border-color   : #6DC72A;
+    border-color   : var(--verde);
     height         : 230px;
     display        : flex;
     justify-content: center;
@@ -341,7 +343,7 @@ figure {
 }
 
 .bg-celeste {
-    background-image: linear-gradient(270deg, #00c6dc25, transparent);
+    background-image: linear-gradient(270deg, var(--bg-celeste), transparent);
 }
 
 .bg-verde-inv {
@@ -353,8 +355,7 @@ figure {
 }
 
 .card-bg-verde {
-    /* background-color: #6ec72aa8; */
-    padding         : 20px;
+    padding         : 30px;
     font-size       : 18px;
     box-shadow:     2px 4px 10px 2px #6ec72a4b;
     border-radius: 10px;
@@ -367,12 +368,12 @@ figure {
 }
 
 .card-bg-celeste {
-    /* background-color: #00c6dca2; */
-
+    
     border-radius: 10px;
-    padding         : 20px;
+    padding-top: 50px;
+    padding         : 30px;
     font-size       : 18px;
-    box-shadow:     2px 4px 10px 2px #00c6dca2;
+    box-shadow:     2px 4px 10px 7px var(--bg-celeste);
     
 }
 
@@ -512,6 +513,7 @@ a:hover {
     margin-top     : 6rem;
     bottom         : 50px;
     right          : 50px;
+    z-index: 100;
 }
 
 .wrapper .fab {
@@ -661,6 +663,8 @@ a:hover {
     }
 }
 
+/* end flotante */
+
 .my-slider {
     width: 100%;
 }
@@ -705,3 +709,10 @@ a:hover {
         right          : 15px;
     }
 }
+
+@media(max-width:425px){
+    .name-descripeion{
+        font-size: 12px;
+    }
+}
+

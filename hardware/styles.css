@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
-
 :root {
     --azul   : #00507D;
     --celeste: #00C7DC;
@@ -21,6 +20,7 @@ body {
     margin-top : 2vh;
     font-size  : 80px;
     font-weight: 600;
+    font-family:'Righteous', cursive; ;
 }
 
 article,
@@ -30,7 +30,7 @@ section {
     margin-bottom: 3em !important;
 }
 
-p {
+p{
     font-family: 'Open Sans', sans-serif;
     font-size: var(--font-size-p);
     line-height: 30px;
@@ -42,6 +42,9 @@ p {
 
 .text-azul {
     color: var(--azul);
+}
+.text-celeste {
+    color: var(--celeste);
 }
 
 .text-verde {
@@ -68,25 +71,25 @@ figure {
 
 .pic-1 {
     opacity        : 1;
-    background     : url('Imagenes Design/T--Bolivia--design_banner.jpg') no-repeat center center;
+    background     : url('ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_banner.jpg') no-repeat center center;
     background-size: cover;
 }
 
 .pic-2 {
     animation-delay: 6s;
-    background     : url('Imagenes Design/T--Bolivia--design_banner.jpg') no-repeat center center;
+    background     : url('ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_banner.jpg') no-repeat center center;
     background-size: cover;
 }
 
 .pic-3 {
     animation-delay: 12s;
-    background     : url('Imagenes Design/T--Bolivia--design_banner.jpg') no-repeat center center;
+    background     : url('ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_banner.jpg') no-repeat center center;
     background-size: cover;
 }
 
 .pic-4 {
     animation-delay: 18s;
-    background     : url('Imagenes Design/T--Bolivia--design_banner.jpg') no-repeat center center;
+    background     : url('ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_banner.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -121,7 +124,7 @@ figure {
 .fondo-banner {
     width           : 100vw;
     height          : 100%;
-    background-image: linear-gradient(to right, var(--azul), transparent);
+    background-image: linear-gradient(to right, var(--azul), var(--celeste));
     opacity         : 0.4;
     position        : absolute;
     padding-bottom  : 100px;
@@ -130,7 +133,7 @@ figure {
 .text-banner {
     width         : 100vw;
     height        : 100%;
-    padding-bottom: 20vh;
+    padding-bottom: 13vh;
     position      : relative;
     display: flex;
     align-items: end;
@@ -152,7 +155,7 @@ figure {
 }
 
 .title-small {
-    color      : var(--morado);
+    color      : var(--celeste);
     font-weight: 600;
 }
 
@@ -222,7 +225,7 @@ figure {
 
 
 .my-nav {
-    background-image: linear-gradient(to right, var(--morado), var(--azul));
+    background-image: linear-gradient(to right,var(--azul), var(--celeste));
     opacity         : 0.9;
     transition      : .3s ease-in-out;
 }
@@ -249,72 +252,45 @@ figure {
 
 /* HASTA AQUI ES EL BANNER Y NAVBAR */
 
-
-/* BANNER GRADIENTE */
-.banner-img {
-    padding         : 5vh;
-    background-image: linear-gradient(45deg,#004f7d88, rgba(255, 255, 255, 0.26));
-    margin-top      : 7vh;
-    width           : 100%;
-    position: relative;
-
+.lista>li{
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--font-size-p);
+    line-height: 50px;
+    
 }
-.txt{
+
+
+
+
+.bg-azul{
+    background-image: linear-gradient(270deg, #00507d1f, transparent);
+    padding-top:30px ;
+    padding-bottom:30px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
 }
 
-.banner-img-inv {
-    padding         : 5vh;
-    background-image: linear-gradient(270deg, #7b006838, rgba(255, 255, 255, 0.315));
-    margin-top      : 7vh;
-    width           : 100%;
-    position: relative;
-}
-
-
-.img{
-    width: 90%;
-    height: 90%;
-
-}
-
-
-
-.click-img{
-    cursor: pointer;
-}
-
-.click-img:hover{
-    transform: scale(1.1);
-    transition: .3s;
-   
-}
-
-.my-modal{
-    background: #000000c4 !important;
-}
-
-.arrow-icons{
-    color: var(--morado);
+.bg-morado{
+    background-image: linear-gradient(270deg, #7b00682d, transparent);
+    padding-top:30px ;
+    padding-bottom:30px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
 }
 
-
-.lista> li{
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 15px;
+.container-imagen{
+    width: 100%;
+    height:70vh;
+    display: flex;
+    position: relative;
+    background-image: url('original.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.lista>li>p> a{
-    font-family: 'Open Sans', sans-serif;
-    color: var(--azul);
-    margin-left: 10px; 
-}
 
-
-.img-back{
-    position: absolute;
-    z-index: -10;
-    opacity: 0.4;
-    overflow-x: hidden;
-    right: 0;
-}
+    

@@ -10,6 +10,7 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../botonflotante.css">
 </head>
 
 
@@ -30,7 +31,7 @@
                             <a class="nav-link active" aria-current="page"
                                 href="../../collaborat/index.html">COLLABORATIONS</a>
                         </li>
-                        
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -42,7 +43,7 @@
                                 <li><a class="dropdown-item text-white" href="../index.html">DESING</a></li>
 
                                 <li><a class="dropdown-item text-white" href="../index.html">ENGINEERING</a></li>
-                                
+
                                 <li><a class="dropdown-item text-white" href="#">HARDWARE</a></li>
                             </ul>
                         </li>
@@ -74,6 +75,27 @@
     </div>
 
     <!-- Fin navbar -->
+
+    <!-- BOTON FLOTANTE -->
+    <div class="wrapper">
+        <input type="checkbox" />
+        <div class="fab"></div>
+        <div class="fac">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Up"><i
+                    class="fas fa-chevron-up"></i></a>
+            <a type="button" onclick="aleatorio()" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Random Color"><i class="fas fa-random"></i></a>
+            <a onclick="modoNocturno()" id="luna" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Dark Mode"><i class="fas fa-moon"></i></a>
+            <a onclick="modoDia()" id="sol" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sun Mode"><i
+                    class="fas fa-sun"></i></a>
+
+            <a onclick="aumentarLetras()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Letter ++"><i
+                    class="fas fa-search-plus"></i></a>
+            <a onclick="disminuirLetras()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Letter --"><i
+                    class="fas fa-search-minus"></i></a>
+        </div>
+    </div>
 
 
     <!-- Banner de Imagenes -->
@@ -118,429 +140,464 @@
         background-color: var(--azul);
     }
 </style>
-<section>
-    <div class="">
-        <div class="row p-0 m-0">
-            <div class="d-none  col-md-3  d-md-flex justify-content-center">
-                <div class="menulateral">
-                    <a href="#experimentalDesing" class="box-icon box-icon-select" id="pestania1">
-                        <div class="diviconMenu ">
-                            <img src="1825113.png" alt="" class="iconMenu">
-                        </div>
-                        <div class="text-menu">
-                            EXPERIMENTAL
-                            <br>DESING
-                        </div>
-                    </a>
-                    <a href="#expectedResult" class="box-icon" id="pestania2">
-                        <div class="diviconMenu">
-                            <img src="2065169.png" alt="" class="iconMenu">
-                        </div>
-                        <div class="text-menu">
-                            EXPECTED <br>
-                            RESULTS
-                        </div>
-                    </a>
-                    <div class="box-icon" id="pestania3">
-                        <div class="diviconMenu">
-                            <img src="5044577.png" alt="" class="iconMenu">
-                        </div>
-                        <div class="text-menu">
-                            Parts
+
+<body id="body">
+
+
+    <section>
+        <div class="">
+            <div class="row p-0 m-0">
+                <div class="d-none  col-md-3  d-md-flex justify-content-center">
+                    <div class="menulateral">
+                        <a href="#experimentalDesing" class="box-icon box-icon-select" id="pestania1">
+                            <div class="diviconMenu ">
+                                <img src="1825113.png" alt="" class="iconMenu">
+                            </div>
+                            <div class="text-menu">
+                                EXPERIMENTAL
+                                <br>DESING
+                            </div>
+                        </a>
+                        <a href="#expectedResult" class="box-icon" id="pestania2">
+                            <div class="diviconMenu">
+                                <img src="2065169.png" alt="" class="iconMenu">
+                            </div>
+                            <div class="text-menu">
+                                EXPECTED <br>
+                                RESULTS
+                            </div>
+                        </a>
+                        <div class="box-icon" id="pestania3">
+                            <div class="diviconMenu">
+                                <img src="5044577.png" alt="" class="iconMenu">
+                            </div>
+                            <div class="text-menu">
+                                Parts
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-9" id="experimentalDesing">
-                <div class="container">
-                    <h2 class="text-celeste mb-4">EXPERIMENTAL</h2>
-                    <div class="row">
-                        <div class="col-md-2">
-                            <img src="ImágenesDiseñoexperimental/Plasmido morado.png" class="w-100" alt="">
-                        </div>
-                        <div class="col-md-10 d-flex justify-content-center align-items-center">
-                            <p>The objective of the experiment is characterizing and
-                                validating the semi-quantitative and quantitative
-                                response of our biosensor. The proposed experimental
-                                design consists on 5 stages.</p>
-                        </div>
-                    </div>
-                    <!-- SLIDER -->
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                                aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_fig0.1.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_fig0.2.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_fig0.3.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_fig0.4.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_fig0.5.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="prev">
-                            <span class="visually-hidden">Previous</span>
-                            <i class="fas fa-chevron-left text-azul" style="font-size: 30px;"></i>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="next">
-                            <span class="visually-hidden">Next</span>
-                            <i class="fas fa-chevron-right text-azul" style="font-size: 30px;"></i>
-
-                        </button>
-                    </div>
-                    <!-- END SILIDER -->
-
-                    <p class="mb-5">The quantitative validation of the biosensor will be carried out by comparing
-                        interlaboratory results. [1] The results reported by the biosensor will be
-                        compared to those of a traditional method: "Atomic absorption spectrometry
-                        with hydride generation". [2] <strong class="text-azul"> In other words, the environmental
-                            samples
-                            will be analyzed in parallel.</strong></p>
-
-                    <h2 class="text-celeste my-4">Other details for the sampling process</h2>
-
-                    <p class="mb-4">
-                        Thanks to previous studies, carried out by Bolivian scientists in 2014 and
-                        2019, we identified 18 contaminated wells with arsenic in the municipalities of
-                        Cercado and Colcapirhua in the city of Cochabamba, designated as Base
-                        Territorial Organizations (TBOs). In these studies, the arsenic concentrations
-                        (ppb) in each well were determined by atomic absorption. [3][4] <strong class="text-azul">For
-                            our
-                            project, we selected six of the eighteen wells considering the
-                            concentration interval established for the operation of our biosensor (0
-                            - 100 ppb As).</strong>
-                    </p>
-                    <div class="row p-0 m-0">
-                        <div class="col-xs-12 col-md-6 mb-4">
-                            <img src="ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_tabla1.png" alt=""
-                                width="100%" height="100%">
-                            <p class="text-center">
-                                <small> <strong class="text-azul">Table 1. </strong> Arsenic concentrations of the
-                                    selected
-                                    wells. 2019 updated data.
-                                    Provided by the scientist Ph.D Ramiro Escalera.</small>
-                            </p>
-                        </div>
-                        <div class="col-xs-12 col-md-6 mb-4">
-                            <img src="ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_fig1.JPG" alt=""
-                                width="100%" height="100%">
-                            <p class="text-center"><small><strong class="text-azul">Figure 1. </strong> Geographical
-                                    location of the selected
-                                    wells.</small></p>
-                        </div>
-                    </div>
-                    <br> <br>
-                    <h5 class="text-azul mt-5">Each well sample will be subjected to different determinations:</h5>
-                    <ul class="lista">
-                        <li><i class="fas fa-check text-celeste mt-5 mx-5"></i> <strong class="text-azul"> Total arsenic
-                                content : </strong>Universidad Privada Boliviana,
-                            Cochabamba, Bolivia.</li>
-                        <li>
-                            <i class="fas fa-check text-celeste mx-5"></i>
-                            <strong class="text-azul">Physicochemical parameters :</strong> C.A.S.A Laboratory.
-                            Cochabamba, Bolivia.
-                        </li>
-                        <li>
-                            <i class="fas fa-check text-celeste mb-5 mx-5"></i>
-                            <strong class="text-azul">Determination of total arsenic content by biosensor:</strong>
-                            Universidad Franz Tamayo laboratories. Cochabamba, Bolivia.
-                        </li>
-                    </ul>
-                    <p>Well water sampling will follow the protocol elaborated by our team.
-                        (colocar link al manual si es posible)</p>
-                </div>
-
-                <!-- segunda secccion -->
-                <div class="container" id="expectedResult">
-                    <section>
-                        <div class="bg-title">
-                            <h2 class="text-center">EXPECTED RESULTS</h2>
-                        </div>
-                        <div class="parallax"></div>
-
+                <div class="col-md-9" id="experimentalDesing">
+                    <div class="container">
+                        <h2 class="text-celeste mb-4">EXPERIMENTAL</h2>
                         <div class="row">
                             <div class="col-md-2">
-                                <img src="ImagenesResultadosesperados/plasmido verde.png" alt="" class="w-100">
+                                <img src="ImágenesDiseñoexperimental/Plasmido morado.png" class="w-100" alt="">
                             </div>
                             <div class="col-md-10 d-flex justify-content-center align-items-center">
-                                <p>Due to situations related to the current COVID-19
-                                    pandemic, reagents and limited entry to the laboratory
-                                    we were not able to materialize the biosensor of our
-                                    project yet, but thanks to the information gathered from
-                                    the scientific literature we can theorize the expected
-                                    results for each of the 5 stages of our experimental
-                                    design:</p>
+                                <p>The objective of the experiment is characterizing and
+                                    validating the semi-quantitative and quantitative
+                                    response of our biosensor. The proposed experimental
+                                    design consists on 5 stages.</p>
                             </div>
                         </div>
-
-                        <h2 class="text-celeste my-4">I. Arsenic toxicity and fitness cost of genetic constructs over
-                            Bacterial chassis</h2>
-                        <p>We expect the toxicity exerted on the biosensor to be minimal, the
-                            concentrations we plan to work with are several orders of magnitude lower
-                            than the concentrations reported to be toxic to the chassis. A 2013 paper
-                            describing the development of a chromoprotein arsenic biosensor reported
-                            working with concentrations up to 1000 ppb without significant toxicity [1],
-                            another paper reported that the toxicity exerted by arsenic is really evident at
-                            concentrations above 250 μmol (18.73 ppm As). [2]</p>
-
-                        <div class="bg-azul">
-                            <div class="col-md-4 ">
-                                <Strong>Figure 1.</Strong> Arsenic toxicity over
-                                bacterial chassis development.
+                        <!-- SLIDER -->
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                    aria-label="Slide 3"></button>
                             </div>
-
-                            <div class="col-md-8">
-                                <img src="ImagenesResultadosesperados/T--Bolivia--espectedresults_fig1.png" alt=""
-                                    class="w-100">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_fig0.1.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_fig0.2.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_fig0.3.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_fig0.4.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_fig0.5.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
                             </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="visually-hidden">Previous</span>
+                                <i class="fas fa-chevron-left text-azul" style="font-size: 30px;"></i>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="visually-hidden">Next</span>
+                                <i class="fas fa-chevron-right text-azul" style="font-size: 30px;"></i>
+
+                            </button>
                         </div>
-                        <p class="mb-5">We expect that in our design the As0 and As2 constructs will exert the
-                            greatest metabolic load, likely to be significant although not very large with
-                            respect to As4 and As5. The metabolic load that genetic constructs will exert
-                            is closely related to their complexity and, in particular, to the length of the
-                            amplification cascade. In the 2019 study of Wang et al. the metabolic load
-                            was especially high when the cascade was composed of 3 amplifiers. When
-                            the cascade was composed of 2 amplifiers the load was lower but this also
-                            depends on its components, a HrpRS-RinA combination resulting in a lower
-                            load. [3]</p>
+                        <!-- END SILIDER -->
 
-                        <div class="bg-morado mt-5">
-                            <div class="col-md-8">
-                                <img src="ImagenesResultadosesperados/T--Bolivia--espectedresults_fig2.png" alt=""
-                                    class="w-100">
-                            </div>
-                            <div class="col-md-4 ">
-                                <Strong>Figure 1.</Strong> Metabolic load of our
-                                genetic constructs over bacterial
-                                chassis represented as a OD600
-                                decrease.
-                            </div>
-                        </div>
-                        <h2 class="text-celeste mt-5 mb-4">II. Biosensor quantitative response characterization</h2>
-                        <p>
-                            The theoretical limit of detection (LOD) of the constructs are As0: <strong>≥ 0.5
-                                ppb</strong>
-                            , As2: <strong>≥ 3 ppb</strong>, As4: <strong>≥ 10 ppb</strong> and As5: <strong>≥ 50
-                                ppb</strong>, the experiments at
-                            this stage are of a semi-quantitative type without the use of instruments
-                            so <strong class="text-azul">we expect that the LODs we gonna report to be considerably
-                                higher, but the data collected will be very helpful for later stages.</strong>
-                            We also expect the background noise levels to be somewhat higher than
-                            those reported by Wang et al. since the sequence of our design does not
-                            contain additional ArsR binding sites (ABS) that would help mitigate this.
-                            [3]
-                            The lyophilization protocol on paper strips that we expect to test makes
-                            use of a protective solution that ensures bacterial viability up to 2 months
-                            after processing, <strong class="text-azul">we expect minimal loss of their detection
-                                activity
-                                under the appropriate storage conditions.</strong> [4]
+                        <p class="mb-5">The quantitative validation of the biosensor will be carried out by comparing
+                            interlaboratory results. [1] The results reported by the biosensor will be
+                            compared to those of a traditional method: "Atomic absorption spectrometry
+                            with hydride generation". [2] <strong class="text-azul"> In other words, the environmental
+                                samples
+                                will be analyzed in parallel.</strong></p>
+
+                        <h2 class="text-celeste my-4">Other details for the sampling process</h2>
+
+                        <p class="mb-4">
+                            Thanks to previous studies, carried out by Bolivian scientists in 2014 and
+                            2019, we identified 18 contaminated wells with arsenic in the municipalities of
+                            Cercado and Colcapirhua in the city of Cochabamba, designated as Base
+                            Territorial Organizations (TBOs). In these studies, the arsenic concentrations
+                            (ppb) in each well were determined by atomic absorption. [3][4] <strong
+                                class="text-azul">For
+                                our
+                                project, we selected six of the eighteen wells considering the
+                                concentration interval established for the operation of our biosensor (0
+                                - 100 ppb As).</strong>
                         </p>
-                        <div class="bg-azul">
-                            <div class="col-md-4 ">
-                                <Strong>Figure 3.</Strong> Paper strip
-                                with the 4 biosensors
-                                lyophilized over the
-                                surface generating
-                                traffic light patterns
-                                after arsenic exposure.
+                        <div class="row p-0 m-0">
+                            <div class="col-xs-12 col-md-6 mb-4">
+                                <img src="ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_tabla1.png" alt=""
+                                    width="100%" height="100%">
+                                <p class="text-center">
+                                    <small> <strong class="text-azul">Table 1. </strong> Arsenic concentrations of the
+                                        selected
+                                        wells. 2019 updated data.
+                                        Provided by the scientist Ph.D Ramiro Escalera.</small>
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-md-6 mb-4">
+                                <img src="ImágenesDiseñoexperimental/T--Bolivia--experimentaldesign_fig1.JPG" alt=""
+                                    width="100%" height="100%">
+                                <p class="text-center" style="font-size: 20px;"><small><strong class="text-azul">Figure
+                                            1. </strong> Geographical
+                                        location of the selected
+                                        wells.</small></p>
+                            </div>
+                        </div>
+                        <br> <br>
+                        <h5 class="text-azul mt-5">Each well sample will be subjected to different determinations:</h5>
+                        <ul class="lista">
+                            <li>
+                                <p><i class="fas fa-check text-celeste mt-5 mx-5"></i><strong class="text-azul"> Total
+                                        arsenic
+                                        content : </strong>Universidad Privada Boliviana,
+                                    Cochabamba, Bolivia.</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-check text-celeste mx-5"></i>
+                                    <strong class="text-azul">Physicochemical parameters :</strong> C.A.S.A Laboratory.
+                                    Cochabamba, Bolivia.
+                                </p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-check text-celeste mb-5 mx-5"></i>
+                                    <strong class="text-azul">Determination of total arsenic content by
+                                        biosensor:</strong>
+                                    Universidad Franz Tamayo laboratories. Cochabamba, Bolivia.
+                                </p>
+                            </li>
+                        </ul>
+                        <p>Well water sampling will follow the protocol elaborated by our team.
+                            (colocar link al manual si es posible)</p>
+                    </div>
+
+                    <!-- segunda secccion -->
+                    <div class="container" id="expectedResult">
+                        <section>
+                            <div class="bg-title">
+                                <h2 class="text-center">EXPECTED RESULTS</h2>
+                            </div>
+                            <div class="parallax"></div>
+
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="ImagenesResultadosesperados/plasmido verde.png" alt="" class="w-100">
+                                </div>
+                                <div class="col-md-10 d-flex justify-content-center align-items-center">
+                                    <p>Due to situations related to the current COVID-19
+                                        pandemic, reagents and limited entry to the laboratory
+                                        we were not able to materialize the biosensor of our
+                                        project yet, but thanks to the information gathered from
+                                        the scientific literature we can theorize the expected
+                                        results for each of the 5 stages of our experimental
+                                        design:</p>
+                                </div>
                             </div>
 
-                            <div class="col-md-8">
-                                <img src="ImagenesResultadosesperados/T--Bolivia--espectedresults_fig3.png" alt=""
-                                    class="w-100">
+                            <h2 class="text-celeste my-4">I. Arsenic toxicity and fitness cost of genetic constructs
+                                over
+                                Bacterial chassis</h2>
+                            <p>We expect the toxicity exerted on the biosensor to be minimal, the
+                                concentrations we plan to work with are several orders of magnitude lower
+                                than the concentrations reported to be toxic to the chassis. A 2013 paper
+                                describing the development of a chromoprotein arsenic biosensor reported
+                                working with concentrations up to 1000 ppb without significant toxicity [1],
+                                another paper reported that the toxicity exerted by arsenic is really evident at
+                                concentrations above 250 μmol (18.73 ppm As). [2]</p>
+
+                            <div class="bg-azul">
+                                <div class="col-md-4 ">
+                                    <p style="font-size: 20px;"><Strong>Figure 1.</Strong> Arsenic toxicity over
+                                        bacterial chassis development.</p>
+                                </div>
+
+                                <div class="col-md-8">
+                                    <img src="ImagenesResultadosesperados/T--Bolivia--espectedresults_fig1.png" alt=""
+                                        class="w-100">
+                                </div>
                             </div>
-                        </div>
-                        <h2 class="text-celeste mt-5 mb-4">III. Biosensor quantitative response characterization</h2>
-                        <p>
-                            At this stage we will work with the construct that presents an optimal
-                            response at concentrations <strong>≥ 5 ppb</strong> of arsenic, <strong class="text-azul">we
-                                expect that it will be
-                                the As2 or As4 construct that fulfills this characteristic.</strong> As
-                            mentioned before, <strong class="text-azul">we expect that the background noise will be
-                                considerable high in comparison to constructs without amplifiers ,
-                                especially in constructs with transcriptional amplifiers</strong> due to the
-                            absence of additional ABS sites [3], <strong class="text-azul">we also expect that the
-                                selected
-                                construct will have a linear response within the range of
-                                concentrations 5 - 100 ppb of arsenic</strong> and that the repeatability,
-                            probably lower than traditional methods, will allow the generation of a
-                            calibration curve with an acceptable error.
-                        </p>
-                        <div class="bg-morado mt-5">
-                            <div class="col-md-8">
-                                <img src="ImagenesResultadosesperados/T--Bolivia--espectedresults_fig4.png" alt=""
-                                    class="w-100">
+                            <p class="mb-5">We expect that in our design the As0 and As2 constructs will exert the
+                                greatest metabolic load, likely to be significant although not very large with
+                                respect to As4 and As5. The metabolic load that genetic constructs will exert
+                                is closely related to their complexity and, in particular, to the length of the
+                                amplification cascade. In the 2019 study of Wang et al. the metabolic load
+                                was especially high when the cascade was composed of 3 amplifiers. When
+                                the cascade was composed of 2 amplifiers the load was lower but this also
+                                depends on its components, a HrpRS-RinA combination resulting in a lower
+                                load. [3]</p>
+
+                            <div class="bg-morado mt-5">
+                                <div class="col-md-8">
+                                    <img src="ImagenesResultadosesperados/T--Bolivia--espectedresults_fig2.png" alt=""
+                                        class="w-100">
+                                </div>
+                                <div class="col-md-4 ">
+                                    <p style="font-size: 20px">  <Strong>Figure 2.</Strong> Metabolic load of our
+                                    genetic constructs over bacterial
+                                    chassis represented as a OD600
+                                    decrease.
+                                </p>
+                                </div>
                             </div>
-                            <div class="col-md-4 ">
-                                <Strong>Figure 4.</Strong> Expected
-                                calibration curve.
+                            <h2 class="text-celeste mt-5 mb-4">II. Biosensor quantitative response characterization</h2>
+                            <p>
+                                The theoretical limit of detection (LOD) of the constructs are As0: <strong>≥ 0.5
+                                    ppb</strong>
+                                , As2: <strong>≥ 3 ppb</strong>, As4: <strong>≥ 10 ppb</strong> and As5: <strong>≥ 50
+                                    ppb</strong>, the experiments at
+                                this stage are of a semi-quantitative type without the use of instruments
+                                so <strong class="text-azul">we expect that the LODs we gonna report to be considerably
+                                    higher, but the data collected will be very helpful for later stages.</strong>
+                                We also expect the background noise levels to be somewhat higher than
+                                those reported by Wang et al. since the sequence of our design does not
+                                contain additional ArsR binding sites (ABS) that would help mitigate this.
+                                [3]
+                                The lyophilization protocol on paper strips that we expect to test makes
+                                use of a protective solution that ensures bacterial viability up to 2 months
+                                after processing, <strong class="text-azul">we expect minimal loss of their detection
+                                    activity
+                                    under the appropriate storage conditions.</strong> [4]
+                            </p>
+                            <div class="bg-azul">
+                                <div class="col-md-4 ">
+                                    <p style="font-size: 20px;"> <Strong>Figure 3.</Strong> Paper strip
+                                        with the 4 biosensors
+                                        lyophilized over the
+                                        surface generating
+                                        traffic light patterns
+                                        after arsenic exposure.
+                                    </p>
+                                </div>
+
+                                <div class="col-md-8">
+                                    <img src="ImagenesResultadosesperados/T--Bolivia--espectedresults_fig3.png" alt=""
+                                        class="w-100">
+                                </div>
                             </div>
-                        </div>
-                        <h2 class="text-celeste mt-5 mb-4">IV. Biosensor quantitative response validation</h2>
-                        <p>
-                            In an attempt to test the specificity of the response of our biosensor we
-                            plan to expose it to 3 different metals (Fe, Hg, Mg) to observe if there is
-                            any type of non-specific response compared to the response to arsenic.
-                            We expect that there will be no significantly different type of response from
-                            the background noise against these 3 metals. [3] The only reported case
-                            of interference in this type of biosensor is antimony which, depending on
-                            the system and design employed, can generate even higher responses
-                            than arsenic itself. [5]
-                        </p>
-                        <div class="bg-azul">
-                            <div class="col-md-4 ">
-                                <Strong>Figure 5.</Strong> Specific
-                                arsenic response,
-                                reporter induction by
-                                other metals is
-                                negligible.
+                            <h2 class="text-celeste mt-5 mb-4">III. Biosensor quantitative response characterization
+                            </h2>
+                            <p>
+                                At this stage we will work with the construct that presents an optimal
+                                response at concentrations <strong>≥ 5 ppb</strong> of arsenic, <strong
+                                    class="text-azul">we
+                                    expect that it will be
+                                    the As2 or As4 construct that fulfills this characteristic.</strong> As
+                                mentioned before, <strong class="text-azul">we expect that the background noise will be
+                                    considerable high in comparison to constructs without amplifiers ,
+                                    especially in constructs with transcriptional amplifiers</strong> due to the
+                                absence of additional ABS sites [3], <strong class="text-azul">we also expect that the
+                                    selected
+                                    construct will have a linear response within the range of
+                                    concentrations 5 - 100 ppb of arsenic</strong> and that the repeatability,
+                                probably lower than traditional methods, will allow the generation of a
+                                calibration curve with an acceptable error.
+                            </p>
+                            <div class="bg-morado mt-5">
+                                <div class="col-md-8">
+                                    <img src="ImagenesResultadosesperados/T--Bolivia--espectedresults_fig4.png" alt=""
+                                        class="w-100">
+                                </div>
+                                <div class="col-md-4 ">
+                                   <p style="font-size: 20px;"> <Strong>Figure 4.</Strong> Expected
+                                    calibration curve.
+                                </p>
+                                </div>
+                            </div>
+                            <h2 class="text-celeste mt-5 mb-4">IV. Biosensor quantitative response validation</h2>
+                            <p>
+                                In an attempt to test the specificity of the response of our biosensor we
+                                plan to expose it to 3 different metals (Fe, Hg, Mg) to observe if there is
+                                any type of non-specific response compared to the response to arsenic.
+                                We expect that there will be no significantly different type of response from
+                                the background noise against these 3 metals. [3] The only reported case
+                                of interference in this type of biosensor is antimony which, depending on
+                                the system and design employed, can generate even higher responses
+                                than arsenic itself. [5]
+                            </p>
+                            <div class="bg-azul">
+                                <div class="col-md-4 ">
+                                    <p style="font-size: 20px;"><Strong>Figure 5.</Strong> Specific
+                                    arsenic response,
+                                    reporter induction by
+                                    other metals is
+                                    negligible.
+                                    </p>
+                                </div>
+
+                                <div class="col-md-8">
+                                    <img src="ImagenesResultadosesperados/T--Bolivia--espectedresults_fig5.png" alt=""
+                                        class="w-100">
+                                </div>
                             </div>
 
-                            <div class="col-md-8">
-                                <img src="ImagenesResultadosesperados/T--Bolivia--espectedresults_fig5.png" alt=""
-                                    class="w-100">
+                            <h2 class="text-celeste mt-5 mb-4">V. Biosensor response with real samples</h2>
+                            <p>
+                                Initially, we expect that the concentrations reported by the biosensor will
+                                be lower than those reported by spectrometric methods since this type of
+                                biosensors do not report total arsenic concentrations, but bioavailable
+                                concentration [6] and this heavily depends on several physicochemical
+                                factors of the sample and the culture medium. For example, <strong class="text-azul">we
+                                    expect
+                                    the bioavailability to be lower if the samples have a high
+                                    concentration of dissolved organic matter. Similarly, if the
+                                    phosphate concentration is high, the uptake of As(V) will also be
+                                    significantly reduced </strong>[7], which would ultimately result in a considerably
+                                lower reported concentration than spectrometric methods.
+                                On the other hand, an advantage that our biosensor has when analyzing
+                                well water samples is the speciation of arsenic in these samples, as they
+                                do not have as much contact with oxygen as surface waters, the
+                                speciation of arsenic in these samples is predominantly As (III) and the
+                                whole-cell biosensors are especially sensitive to this form because it
+                                does not need an extra reduction step. [7]
+                            </p>
+                        </section>
+                        <section>
+                            <h2 class="text-celeste mb-4">References</h2>
+                            <div class="container">
+                                <h5 class="text-azul">Experimental Desing</h5>
+                                <p>1. B. Magnusson and U. Örnemark (eds.) (2016) Eurachem Guide: The Fitness for Purpose
+                                    of Analytical Methods – A Laboratory Guide to Method Validation and Related Topics,
+                                    (2nd
+                                    ed. 2014). ISBN 978-91-87461-59-0. Available from
+                                    <a href="https://www.eurachem.org" class="text-celeste" target="_blank"> visit the
+                                        page.</a>
+                                </p>
+                                <p>2. Morand, E.; Giménez, M.; Benitez, M. & Garro, O. (2021). Determinación de arsénico
+                                    en
+                                    agua por espectrometría de absorción atómica con generación de hidruro (HG-AAS).
+                                    <a href="https://www.researchgate.net/publication/228700959_Determinacion_de_arsenico_en_agua_por_espectrometria_de_absorcion_atomica_con_generacion_de_hidruro_HG-AAS"
+                                        class="text-celeste" target="_blank"> visit the page.</a>
+                                </p>
+                                <p>3. Escalera, R, & Ormachea, M. (2017). Hidroquímica de la presencia natural de
+                                    arsénico
+                                    en aguas subterráneas de Cochabamba-Bolivia y evaluación de la viabilidad técnica de
+                                    procesos de remoción. Investigación & Desarrollo, 1(17), 27-41. Recuperado en 15 de
+                                    septiembre de 2021, de.
+                                    <a href="http://www.scielo.org.bo/scielo.php?script=sci_arttext&pid=S2518-44312017000100004&lng=es&tlng=es"
+                                        class="text-celeste" target="_blank"> visit the page.</a>
+                                </p>
+                                <p>4. Escalera, R.; Ormachea, M.;, Ormachea, O. & Heredia, M. (2014). Presencia de
+                                    arsénico
+                                    en aguas de pozos profundos y su remoción usando un prototipo piloto basado en
+                                    colectores solares de bajo costo. Investigación & Desarrollo, 2(14), 83-91.
+                                    Recuperado
+                                    en
+                                    15 de septiembre de 2021, de
+                                    <a href="http://www.scielo.org.bo/scielo.php?script=sci_arttext&pid=S2518-44312014000200006&lng=es&tlng=es"
+                                        class="text-celeste" target="_blank"> visit the page.</a>
+                                </p>
+                                <h5 class="text-azul">Expected Result</h5>
+                                <p>1. Barone, F., Dorr, F., Marasco, L. E., Mildiner, S., Patop, I. L., Sosa, S.,
+                                    Vattino,
+                                    L. G.,
+                                    Vignale, F. A., Altszyler Lemcovich, E. J., Basanta, B., Carlotto, N., Gasulla, J.,
+                                    Giménez, M., Grande, A. V., Nieto Moreno, N., Bonomi, H. R., & Nadra, A. D. (2017).
+                                    Design and evaluation of an incoherent feed-forward loop for an arsenic biosensor
+                                    based on standard iGEM parts.
+                                    <a href="https://doi.org/10.1093/synbio/ysx006" class="text-celeste"
+                                        target="_blank">
+                                        visit the page.</a>
+                                </p>
+                                <p>2. Barone, F., Dorr, F., Marasco, L. E., Mildiner, S., Patop, I. L., Sosa, S.,
+                                    Vattino,
+                                    L. G.,
+                                    Vignale, F. A., Altszyler Lemcovich, E. J., Basanta, B., Carlotto, N., Gasulla, J.,
+                                    Giménez, M., Grande, A. V., Nieto Moreno, N., Bonomi, H. R., & Nadra, A. D. (2017).
+                                    Design and evaluation of an incoherent feed-forward loop for an arsenic biosensor
+                                    based on standard iGEM parts.
+                                    <a href="https://doi.org/10.1093/synbio/ysx006" class="text-celeste"
+                                        target="_blank">
+                                        visit the page.</a>
+                                </p>
+                                <p>3. Hu, Q., Li, L., Wang, Y., Zhao, W., Qi, H., & Zhuang, G. (2010). Construction of
+                                    WCB-
+                                    11: A novel phiYFP arsenic-resistant whole-cell biosensor. Journal of Environmental
+                                    Sciences, 22(9), 1469-1474.
+                                    <a href="https://doi.org/10.1016/S1001-0742(09)60277-1" class="text-celeste"
+                                        target="_blank"> visit the page.</a>
+                                </p>
+                                <p>4. Wan, X., Volpetti, F., Petrova, E., French, C., Maerkl, S. J., & Wang, B. (2019).
+                                    Cascaded amplifying circuits enable ultrasensitive cellular sensors for toxic
+                                    metals.
+                                    Nature Chemical Biology, 15(5), 540-548.
+                                    <a href="https://doi.org/10.1038/s41589-019-0244-3" class="text-celeste"
+                                        target="_blank"> visit the page.</a>
+                                </p>
+                                <p>5. Stocker, J., Balluch, D., Gsell, M., Harms, H., Feliciano, J., Daunert, S., Malik,
+                                    K.
+                                    A., &
+                                    van der Meer, J. R. (2003). Development of a Set of Simple Bacterial Biosensors for
+                                    Quantitative and Rapid Measurements of Arsenite and Arsenate in Potable Water.
+                                    Environmental Science & Technology, 37(20), 4743-4750.
+                                    <a href="https://doi.org/10.1021/es034258b" class="text-celeste" target="_blank">
+                                        visit
+                                        the page.</a>
+                                </p>
+                                <p>6. Kaur, H., Kumar, R., Babu, J. N., & Mittal, S. (2015). Advances in arsenic
+                                    biosensor
+                                    development – A comprehensive review. Biosensors and Bioelectronics, 63, 533-545.
+                                    <a href="https://doi.org/10.1016/j.bios.2014.08.003" class="text-celeste"
+                                        target="_blank"> visit the page.</a>
+                                </p>
+                                <p>7. Pothier, M. P., Hinz, A. J., & Poulain, A. J. (2018). Insights Into Arsenite and
+                                    Arsenate
+                                    Uptake Pathways Using a Whole Cell Biosensor. Frontiers in Microbiology, 9.
+                                    <a href="https://doi.org/10.3389/fmicb.2018.02310" class="text-celeste"
+                                        target="_blank">
+                                        visit the page.</a>
+                                </p>
                             </div>
-                        </div>
-
-                        <h2 class="text-celeste mt-5 mb-4">V. Biosensor response with real samples</h2>
-                        <p>
-                            Initially, we expect that the concentrations reported by the biosensor will
-                            be lower than those reported by spectrometric methods since this type of
-                            biosensors do not report total arsenic concentrations, but bioavailable
-                            concentration [6] and this heavily depends on several physicochemical
-                            factors of the sample and the culture medium. For example, <strong class="text-azul">we
-                                expect
-                                the bioavailability to be lower if the samples have a high
-                                concentration of dissolved organic matter. Similarly, if the
-                                phosphate concentration is high, the uptake of As(V) will also be
-                                significantly reduced </strong>[7], which would ultimately result in a considerably
-                            lower reported concentration than spectrometric methods.
-                            On the other hand, an advantage that our biosensor has when analyzing
-                            well water samples is the speciation of arsenic in these samples, as they
-                            do not have as much contact with oxygen as surface waters, the
-                            speciation of arsenic in these samples is predominantly As (III) and the
-                            whole-cell biosensors are especially sensitive to this form because it
-                            does not need an extra reduction step. [7]
-                        </p>
-                    </section>
-                    <section>
-                        <h2 class="text-celeste mb-4">References</h2>
-                        <div class="container">
-                            <h5 class="text-azul">Experimental Desing</h5>
-                            <p>1. B. Magnusson and U. Örnemark (eds.) (2016) Eurachem Guide: The Fitness for Purpose
-                                of Analytical Methods – A Laboratory Guide to Method Validation and Related Topics, (2nd
-                                ed. 2014). ISBN 978-91-87461-59-0. Available from
-                                <a href="https://www.eurachem.org" class="text-celeste" target="_blank"> visit the
-                                    page.</a>
-                            </p>
-                            <p>2. Morand, E.; Giménez, M.; Benitez, M. & Garro, O. (2021). Determinación de arsénico en
-                                agua por espectrometría de absorción atómica con generación de hidruro (HG-AAS).
-                                <a href="https://www.researchgate.net/publication/228700959_Determinacion_de_arsenico_en_agua_por_espectrometria_de_absorcion_atomica_con_generacion_de_hidruro_HG-AAS"
-                                    class="text-celeste" target="_blank"> visit the page.</a>
-                            </p>
-                            <p>3. Escalera, R, & Ormachea, M. (2017). Hidroquímica de la presencia natural de arsénico
-                                en aguas subterráneas de Cochabamba-Bolivia y evaluación de la viabilidad técnica de
-                                procesos de remoción. Investigación & Desarrollo, 1(17), 27-41. Recuperado en 15 de
-                                septiembre de 2021, de.
-                                <a href="http://www.scielo.org.bo/scielo.php?script=sci_arttext&pid=S2518-44312017000100004&lng=es&tlng=es"
-                                    class="text-celeste" target="_blank"> visit the page.</a>
-                            </p>
-                            <p>4. Escalera, R.; Ormachea, M.;, Ormachea, O. & Heredia, M. (2014). Presencia de arsénico
-                                en aguas de pozos profundos y su remoción usando un prototipo piloto basado en
-                                colectores solares de bajo costo. Investigación & Desarrollo, 2(14), 83-91. Recuperado
-                                en
-                                15 de septiembre de 2021, de
-                                <a href="http://www.scielo.org.bo/scielo.php?script=sci_arttext&pid=S2518-44312014000200006&lng=es&tlng=es"
-                                    class="text-celeste" target="_blank"> visit the page.</a>
-                            </p>
-                            <h5 class="text-azul">Expected Result</h5>
-                            <p>1. Barone, F., Dorr, F., Marasco, L. E., Mildiner, S., Patop, I. L., Sosa, S., Vattino,
-                                L. G.,
-                                Vignale, F. A., Altszyler Lemcovich, E. J., Basanta, B., Carlotto, N., Gasulla, J.,
-                                Giménez, M., Grande, A. V., Nieto Moreno, N., Bonomi, H. R., & Nadra, A. D. (2017).
-                                Design and evaluation of an incoherent feed-forward loop for an arsenic biosensor
-                                based on standard iGEM parts.
-                                <a href="https://doi.org/10.1093/synbio/ysx006" class="text-celeste" target="_blank">
-                                    visit the page.</a>
-                            </p>
-                            <p>2. Barone, F., Dorr, F., Marasco, L. E., Mildiner, S., Patop, I. L., Sosa, S., Vattino,
-                                L. G.,
-                                Vignale, F. A., Altszyler Lemcovich, E. J., Basanta, B., Carlotto, N., Gasulla, J.,
-                                Giménez, M., Grande, A. V., Nieto Moreno, N., Bonomi, H. R., & Nadra, A. D. (2017).
-                                Design and evaluation of an incoherent feed-forward loop for an arsenic biosensor
-                                based on standard iGEM parts.
-                                <a href="https://doi.org/10.1093/synbio/ysx006" class="text-celeste" target="_blank">
-                                    visit the page.</a>
-                            </p>
-                            <p>3. Hu, Q., Li, L., Wang, Y., Zhao, W., Qi, H., & Zhuang, G. (2010). Construction of WCB-
-                                11: A novel phiYFP arsenic-resistant whole-cell biosensor. Journal of Environmental
-                                Sciences, 22(9), 1469-1474.
-                                <a href="https://doi.org/10.1016/S1001-0742(09)60277-1" class="text-celeste"
-                                    target="_blank"> visit the page.</a>
-                            </p>
-                            <p>4. Wan, X., Volpetti, F., Petrova, E., French, C., Maerkl, S. J., & Wang, B. (2019).
-                                Cascaded amplifying circuits enable ultrasensitive cellular sensors for toxic metals.
-                                Nature Chemical Biology, 15(5), 540-548.
-                                <a href="https://doi.org/10.1038/s41589-019-0244-3" class="text-celeste"
-                                    target="_blank"> visit the page.</a>
-                            </p>
-                            <p>5. Stocker, J., Balluch, D., Gsell, M., Harms, H., Feliciano, J., Daunert, S., Malik, K.
-                                A., &
-                                van der Meer, J. R. (2003). Development of a Set of Simple Bacterial Biosensors for
-                                Quantitative and Rapid Measurements of Arsenite and Arsenate in Potable Water.
-                                Environmental Science & Technology, 37(20), 4743-4750.
-                                <a href="https://doi.org/10.1021/es034258b" class="text-celeste" target="_blank"> visit
-                                    the page.</a>
-                            </p>
-                            <p>6. Kaur, H., Kumar, R., Babu, J. N., & Mittal, S. (2015). Advances in arsenic biosensor
-                                development – A comprehensive review. Biosensors and Bioelectronics, 63, 533-545.
-                                <a href="https://doi.org/10.1016/j.bios.2014.08.003" class="text-celeste"
-                                    target="_blank"> visit the page.</a>
-                            </p>
-                            <p>7. Pothier, M. P., Hinz, A. J., & Poulain, A. J. (2018). Insights Into Arsenite and
-                                Arsenate
-                                Uptake Pathways Using a Whole Cell Biosensor. Frontiers in Microbiology, 9.
-                                <a href="https://doi.org/10.3389/fmicb.2018.02310" class="text-celeste" target="_blank">
-                                    visit the page.</a>
-                            </p>
-                        </div>
-                    </section>
+                        </section>
+                    </div>
+                    <br><br><br>
                 </div>
-                <br><br><br>
+
+
             </div>
-
-
         </div>
-    </div>
-</section>
+    </section>
 
 
+</body>
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
@@ -558,17 +615,22 @@
             document.getElementById('nav').classList.remove('my-nav')
         }
 
+        if (y >= 1950) {
+            document.getElementById('pestania1').classList.remove('box-icon-select')
+            document.getElementById('pestania2').classList.add('box-icon-select')
+        } else {
+            document.getElementById('pestania2').classList.remove('box-icon-select')
+            document.getElementById('pestania1').classList.add('box-icon-select')
+        }
+
     })
 
     function navBarColor() {
         document.getElementById('nav').classList.add('my-nav')
     }
 
-    $(".option").click(function () {
-        $(".option").removeClass("active");
-        $(this).addClass("active");
 
-    });
 </script>
+<script src="../../main.js"></script>
 
 </html>

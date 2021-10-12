@@ -9,15 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/inclusivity.css" />
+    <link rel="stylesheet" href="botonflotante.css">
 </head>
 
-<body>
-    <!-- <div class="contenedor-carga">
-        <video src="carga.mp4" class="animacion" autoplay loop></video>
-        <h5>LOADING</h5>
-    </div> -->
+<body id="body">
 
     <header>
         <!-- NavBar -->
@@ -33,7 +30,8 @@
                     <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item hover-nav">
-                                <a class="nav-link active" aria-current="page" href="collaborat/index.html">COLLABORATIONS</a>
+                                <a class="nav-link active" aria-current="page"
+                                    href="collaborat/index.html">COLLABORATIONS</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -43,10 +41,11 @@
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">DESCRIPCION</a></li>
                                     <li><a class="dropdown-item" href="protocolos/index.html">DESING</a></li>
-                                        <li>
+                                    <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="protocolos/Engineering/index.html">ENGINEERNING</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="protocolos/Engineering/index.html">ENGINEERNING</a></li>
                                     <li><a class="dropdown-item" href="#">HARDWARE</a></li>
                                 </ul>
                             </li>
@@ -58,7 +57,7 @@
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
+                                    <li>
                                         <hr class="dropdown-divider">
                                     </li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -78,6 +77,26 @@
 
         <!-- Fin navbar -->
 
+        <!-- BOTON FLOTANTE -->
+        <div class="wrapper">
+            <input type="checkbox" />
+            <div class="fab"></div>
+            <div class="fac">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Up"><i
+                        class="fas fa-chevron-up"></i></a>
+                <a type="button" onclick="aleatorio()" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    title="Random Color"><i class="fas fa-random"></i></a>
+                <a onclick="modoNocturno()" id="luna" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    title="Dark Mode"><i class="fas fa-moon"></i></a>
+                <a onclick="modoDia()" id="sol" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sun Mode"><i
+                        class="fas fa-sun"></i></a>
+
+                <a onclick="aumentarLetras()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Letter ++"><i
+                        class="fas fa-search-plus"></i></a>
+                <a onclick="disminuirLetras()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Letter --"><i
+                        class="fas fa-search-minus"></i></a>
+            </div>
+        </div>
 
         <!-- Banner de Imagenes -->
 
@@ -404,15 +423,29 @@
 </body>
 
 </html>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
 
-<script src="loadNavbar.js"></script>
 
 <script>
     AOS.init();
 </script>
 
 <script>
+
+    window.addEventListener('scroll', (e) => {
+        let y = window.scrollY;
+        if (y >= 500) {
+            document.getElementById('nav').classList.add('my-nav')
+        } else {
+            document.getElementById('nav').classList.remove('my-nav')
+        }
+    })
+
+    function navBarColor() {
+        document.getElementById('nav').classList.add('my-nav')
+    }
     function reproVideo(id) {
 
         let videoPlay = document.getElementById(`video${id}`)
@@ -423,3 +456,4 @@
     }
 
 </script>
+<script src="main.js"></script>

@@ -90,8 +90,8 @@
                                 </h4>
                             </div>
                             <h1 class="text-center text-md-start text-white titulo-principal">COLLABORATIONS</h1>
-                            <p class="text-white text-white text-sm-center text-md-start">HISPANIC DISCUSSION WORKSHOP
-                                ORGANIZED BY iGEM BOLIVIA</p>
+                            <p class="text-white text-white text-sm-center text-md-start" style="font-size: 20px;">
+                                Hispanic Discussion Workshop Organized By IGEM BOLIVIA</p>
                         </div>
                     </div>
 
@@ -110,15 +110,25 @@
         <input type="checkbox" />
         <div class="fab"></div>
         <div class="fac">
-            <a href="#"><i class="fas fa-chevron-up"></i></a>
-            <a onclick="aleatorio()"><i class="fas fa-random"></i></a>
-            <a onclick="modoNocturno()"><i class="fas fa-moon"></i></i></a>
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Up"><i
+                    class="fas fa-chevron-up"></i></a>
+            <a type="button" onclick="aleatorio()" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Random Color"><i class="fas fa-random"></i></a>
+            <a onclick="modoNocturno()" id="luna" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Dark Mode"><i class="fas fa-moon"></i></a>
+            <a onclick="modoDia()" id="sol" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sun Mode"><i
+                    class="fas fa-sun"></i></a>
+
+            <a onclick="aumentarLetras()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Letter ++"><i
+                    class="fas fa-search-plus"></i></a>
+            <a onclick="disminuirLetras()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Letter --"><i
+                    class="fas fa-search-minus"></i></a>
         </div>
     </div>
 
     <div class="row p-0 m-0">
         <!-- menu lateral -->
-        <div class="d-none mt-5  col-md-3  d-md-flex justify-content-center ">
+        <div class="d-none mt-5  col-md-3 d-md-flex justify-content-center ">
             <div class="menulateral">
                 <a href="#experimentalDesing" class="box-icon box-icon-select" id="pestania1">
                     <div class="diviconMenu ">
@@ -149,7 +159,7 @@
 
         </div>
         <!-- end menu lateral -->
-        
+
         <div class="col-md-9 p-0">
             <section class="bg-celeste pb-5">
                 <div class="container px-5 ">
@@ -206,6 +216,7 @@
                         debate. iGEM Ecuador, iGEM FCB - UANL and iGEM UAM.</p>
                     <div class="row mt-5">
                         <!-- EQUIPO -->
+                        <h2 class="text-center text-verde mb-4">TEAMS</h2>
                         <div class="col-sm-6 col-lg-4 pt-5  d-flex justify-content-center mb-5">
                             <img src="collaboration taller de debate/T--Bolivia--collaborations-img2.1.png"
                                 class="teamHover" alt="">
@@ -222,15 +233,16 @@
                     <br><br>
                     <div class="row ">
                         <!-- INSTRUCTORES -->
+                        <h2 class="text-center text-verde mb-4">INSTRUCTORS</h2>
                         <div class="col-sm-6 col-lg-4 mb-4">
                             <img src="collaboration taller de debate/T--Bolivia--collaborations-img1.c.png"
                                 class="w-100 img" alt="">
                         </div>
                         <div class="col-sm-6 mb-5 col-lg-4  mb-4"><img
-                                src="collaboration taller de debate/T--Bolivia--collaborations-img1.c.png"
+                                src="collaboration taller de debate/T--Bolivia--collaborations-img1.d.png"
                                 class=" w-100 img" alt=""></div>
                         <div class="col-sm-6 col-lg-4  mb-4"><img
-                                src="collaboration taller de debate/T--Bolivia--collaborations-img1.c.png"
+                                src="collaboration taller de debate/T--Bolivia--collaborations-img1.e.png"
                                 class="w-100 img" alt=""></div>
                     </div>
 
@@ -239,10 +251,11 @@
 
             <section>
                 <div class="container">
-                    <div class="row">
+                    <div class="row d-flex justify-content-center align-items-center ">
                         <div
-                            class="col-md-4 d-flex flex-column justify-content-center align-items-center card-bg-celeste">
-                            <p>We began by holding three workshops in which all participants were able to interact and
+                            class="col-lg-4 d-flex flex-column justify-content-center align-items-center card-bg-celeste ">
+                            <p class="">We began by holding three workshops in which all participants were able to
+                                interact and
                                 learn
                                 the
                                 necessary tools for a debate: </p>
@@ -256,7 +269,7 @@
                                 where the participants practiced what they had learned.
                             </p>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-lg-8">
                             <div class="row d-flex justify-content-center m-0 p-0">
                                 <!-- slider  -->
                                 <div id="slider1" class="carousel slide my-slider" data-bs-ride="carousel">
@@ -286,12 +299,12 @@
                                     </div>
                                     <button class="carousel-control-prev" type="button" data-bs-target="#slider1"
                                         data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <i class="fa fa-chevron-left text-verde"></i>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
                                     <button class="carousel-control-next" type="button" data-bs-target="#slider1"
                                         data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <i class="fa fa-chevron-right text-verde"></i>
                                         <span class="visually-hidden">Next</span>
                                     </button>
                                 </div>
@@ -307,17 +320,17 @@
             <section>
 
                 <div class="container px-5">
-                    <div class="row">
-                        <div class="col-md-8">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-lg-8">
                             <div class="row d-flex justify-content-center m-0 p-0">
                                 <!-- slider  -->
-                                <div id="slider2" class="carousel slide my-slider" data-bs-ride="carousel">
+                                <div id="sld2" class="carousel slide my-slider" data-bs-ride="carousel">
                                     <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#slider2" data-bs-slide-to="0"
-                                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#slider2" data-bs-slide-to="1"
+                                        <button type="button" data-bs-target="#sld2" data-bs-slide-to="0" class="active"
+                                            aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#sld2" data-bs-slide-to="1"
                                             aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#slider2" data-bs-slide-to="2"
+                                        <button type="button" data-bs-target="#sld2" data-bs-slide-to="2"
                                             aria-label="Slide 3"></button>
                                     </div>
                                     <div class="carousel-inner">
@@ -336,14 +349,14 @@
 
                                         </div>
                                     </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#slider2"
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#sld2"
                                         data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <i class="fa fa-chevron-left text-verde"></i>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#slider2"
+                                    <button class="carousel-control-next" type="button" data-bs-target="#sld2"
                                         data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <i class="fa fa-chevron-right text-verde"></i>
                                         <span class="visually-hidden">Next</span>
                                     </button>
                                 </div>
@@ -351,8 +364,11 @@
                             </div>
                         </div>
                         <div
-                            class="col-md-4 d-flex flex-column justify-content-center align-items-center card-bg-verde">
-                            <p>"Roles of Judges and Zigzag Format", taught by José Luis Feliciano Chipana, is a very important topic when it comes to participating as a judge or speaker in a debate. The segment ended with a mock debate in this format.</p>
+                            class="col-lg-4 d-flex flex-column justify-content-center align-items-center card-bg-verde">
+                            <br>
+                            <p>"Roles of Judges and Zigzag Format", taught by José Luis Feliciano Chipana, is a very
+                                important topic when it comes to participating as a judge or speaker in a debate. The
+                                segment ended with a mock debate in this format.</p>
                         </div>
                     </div>
                 </div>
@@ -360,13 +376,19 @@
 
             <section>
                 <div class="container px-5">
-                    <div class="row">
+                    <div class="row d-flex justify-content-center align-items-center">
                         <div
-                            class="col-md-4 d-flex flex-column justify-content-center align-items-center card-bg-celeste">
-                            <p>"If knowledge is Controversial, do we debate?". Together with MSc. Gabriela Rivadeneira Caballero tutor of iGEM BOLIVIA, who spoke to us about how to convey our ideas regarding the position of an issue.</p>
-                            <i> " ... we must notice the culture, be able to transmit scientific knowledge to a target group, we will see that knowledge becomes controversial and we have the challenge of being able to transmit this scientific knowledge in a friendly way.”</i>
+                            class="col-lg-4 d-flex flex-column justify-content-center align-items-center card-bg-celeste">
+                            <br><br>
+                            <p>"If knowledge is Controversial, do we debate?". Together with MSc. Gabriela Rivadeneira
+                                Caballero tutor of iGEM BOLIVIA, who spoke to us about how to convey our ideas regarding
+                                the position of an issue.</p>
+                            <p style="font-weight: bold;"> " ... we must notice the culture, be able to transmit
+                                scientific knowledge to a target
+                                group, we will see that knowledge becomes controversial and we have the challenge of
+                                being able to transmit this scientific knowledge in a friendly way.”</p>
                             <div class="row d-flex justify-content-end align-items-end p-0 m-0">
-                                <i class="text-end">---MSc. Gabriela Rivadeneira.</i>
+                                <p class="text-end">---MSc. Gabriela Rivadeneira.</p>
                             </div>
                         </div>
                         <div class="col-md-8">
@@ -398,13 +420,13 @@
                                     </div>
                                     <button class="carousel-control-prev" type="button" data-bs-target="#slider3"
                                         data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <i class="fa fa-chevron-left text-verde"></i>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
                                     <button class="carousel-control-next" type="button" data-bs-target="#slider3"
                                         data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
+                                        <i class="fas fa-chevron-right text-verde"></i>
                                     </button>
                                 </div>
                                 <!-- end slider -->
@@ -422,17 +444,21 @@
             <section>
                 <div class="container px-5 ">
                     <h2 class="text-verde mb-4">ABOUT THE TOURNAMENT</h2>
-                    <p>The Debate Tournament was held on Saturday June 19th and Sunday June 20th, where a total of eight teams participated. From this first tournament we obtained the semifinalists who debated the following motions:</p>
-                    <div class="row">
+                    <p>The Debate Tournament was held on Saturday June 19th and Sunday June 20th, where a total of eight
+                        teams participated. From this first tournament we obtained the semifinalists who debated the
+                        following motions:</p>
+                    <div class="row ">
                         <div class="col-sm-12  col-md-6 col-lg-6">
                             <div class="lista">
                                 <div class="lista-item">
                                     <i class=" text-verde fas fa-check mx-4" style="font-size: 18px;"></i>
-                                    <p>Should Synthetic Biology be restricted for the precaution of bioterrorism? iGEM Bolivia as affirmative and FCB-UANL as negative.</p>
+                                    <p>Should Synthetic Biology be restricted for the precaution of bioterrorism? iGEM
+                                        Bolivia as affirmative and FCB-UANL as negative.</p>
                                 </div>
                                 <div class=" lista-item">
                                     <i class=" text-verde  fas fa-check mx-4" style="font-size: 18px;"></i>
-                                    <p>Is it ethical to use aborted human embryos for experiments? UAM participated as affirmative and SYNTHETIC BIOBOTS as negative.</p>
+                                    <p>Is it ethical to use aborted human embryos for experiments? UAM participated as
+                                        affirmative and SYNTHETIC BIOBOTS as negative.</p>
                                 </div>
                             </div>
 
@@ -448,6 +474,7 @@
                             </div>
 
                         </div>
+
                         <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center mt-3 ">
                             <!-- slider  -->
                             <div id="slider4" class="carousel slide my-carousel" data-bs-ride="carousel">
@@ -473,12 +500,13 @@
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#slider4"
                                     data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <i class="fa fa-chevron-left text-verde"></i>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
                                 <button class="carousel-control-next" type="button" data-bs-target="#slider4"
                                     data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <i class="fa fa-chevron-right text-verde"></i>
+
                                     <span class="visually-hidden">Next</span>
                                 </button>
                             </div>
@@ -495,7 +523,9 @@
                 <div class="container px-5 mt-5">
                     <h2 class="text-verde mb-4">GRAND FINALE</h2>
                     <div class="row">
-                        <p>In this final event, we had two Mexican teams: iGEM UAM team represented by Andrea Sánchez and Angel Emanuel Martínez Flores and FCB - UANL team formed by Jorge Alberto Uribe and Julissa Janeth García, who competed for the first place.</p>
+                        <p>In this final event, we had two Mexican teams: iGEM UAM team represented by Andrea Sánchez
+                            and Angel Emanuel Martínez Flores and FCB - UANL team formed by Jorge Alberto Uribe and
+                            Julissa Janeth García, who competed for the first place.</p>
                         <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center">
                             <!-- slider  -->
                             <div id="slider4" class="carousel slide my-carousel2" data-bs-ride="carousel">
@@ -536,14 +566,20 @@
 
 
 
-                        <p class="my-5">The debate allowed for a broad exchange of ideas, questions, rebuttal and defense of arguments between the two teams. The debate was quite intense and ended, declaring the FCB-UANL team the winner of the 2021 Hispanic Debate Tournament.This event was sponsored by Allbiotech which awarded the winning team with a totally free course.</p>
+                        <p class="my-5">The debate allowed for a broad exchange of ideas, questions, rebuttal and
+                            defense of arguments between the two teams. The debate was quite intense and ended,
+                            declaring the FCB-UANL team the winner of the 2021 Hispanic Debate Tournament.This event was
+                            sponsored by Allbiotech which awarded the winning team with a totally free course.</p>
                     </div>
                     <div class="row d-flex justify-content-center m-0 p-0">
                         <img src="collaboration taller de debate/T--Bolivia--collaborations-img10.jpeg" alt=""
                             class=" img my-slider ">
                     </div>
                     <p class="my-5">
-                        This activity could be seen thanks to iGEM TV for Latin America, where the impact of this event on the participating iGEMers was shown and where the winners shared their experience, too. In addition, we inspire iGEM UAM to debate with radical movements, such as GreenPeace, to bring controversial issues around Synthetic Biology.
+                        This activity could be seen thanks to iGEM TV for Latin America, where the impact of this event
+                        on the participating iGEMers was shown and where the winners shared their experience, too. In
+                        addition, we inspire iGEM UAM to debate with radical movements, such as GreenPeace, to bring
+                        controversial issues around Synthetic Biology.
                     </p>
 
                     <div class="row d-flex justify-content-center m-0 p-0">
@@ -555,13 +591,14 @@
                         position of
                         an issue. He mentioned that </p>
 
-                    <i>" ... we must notice the culture, be able to transmit scientific knowledge to a target group, we
+                    <p style="font-weight: bold;">" ... we must notice the culture, be able to transmit scientific
+                        knowledge to a target group, we
                         will see
                         that knowledge becomes controversial and we have the challenge of being able to transmit this
                         scientific
-                        knowledge in a friendly way.”</i>
+                        knowledge in a friendly way.”</p>
                     <div class="row d-flex justify-content-end align-items-end p-0 m-0">
-                        <i class="text-end">---MSc. Gabriela Rivadeneira.</i>
+                        <p class="text-end">---MSc. Gabriela Rivadeneira.</p>
                     </div>
 
                 </div>
@@ -602,20 +639,24 @@
             <section>
                 <div class="container px-5">
                     <h2 class="text-verde mb-4">ORGANIZING TEAM AND SUPPORT TEAM</h2>
-                    <p>All this would not have been possible without the help of those who participated in this great event by contributing their ideas and time to make it a success.</p>
+                    <p>All this would not have been possible without the help of those who participated in this great
+                        event by contributing their ideas and time to make it a success.</p>
 
                     <div class="row">
                         <div class="col-xs-12 col-md-6 d-flex justify-content-center justify-content-md-end">
                             <!-- slider  -->
-                            <div id="slider4" class="carousel slide" data-bs-ride="carousel" style="width: 70%;">
+                            
+                            <div id="sldf" class="carousel slide" data-bs-ride="carousel" style="width: 70%;">
                                 <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#slider4" data-bs-slide-to="0" class="active"
+                                    <button type="button" data-bs-target="#sldf" data-bs-slide-to="0" class="active"
                                         aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#slider4" data-bs-slide-to="1"
+                                    <button type="button" data-bs-target="#sldf" data-bs-slide-to="1"
                                         aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#slider4" data-bs-slide-to="2"
-                                        aria-label="Slide 3"></button>
-                                </div>
+                                        <button type="button" data-bs-target="#sldf" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#sldf" data-bs-slide-to="3"
+                                            aria-label="Slide 3"></button>
+                                    </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <img src="collaboration taller de debate/T--Bolivia--collaborations-img12.a.png"
@@ -635,28 +676,37 @@
                                     </div>
 
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#slider4"
+                                <button class="carousel-control-prev" type="button" data-bs-target="#sldf"
                                     data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
+                                    <i class="fa fa-chevron-left text-verde"></i>
+                                    
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#slider4"
+                                <button class="carousel-control-next" type="button" data-bs-target="#sldf"
                                     data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <i class="fa fa-chevron-right text-verde"></i>
                                     <span class="visually-hidden">Next</span>
                                 </button>
                             </div>
                             <!-- end slider -->
                         </div>
                         <div class="col-xs-12 col-md-5 pt-5">
-                            <p>Although the workshop and tournament lasted about a month, organization of the event took months of hard work. We thank the iGEM teams who dedicated many working hours, provided their social media platforms, helped us with the calendar and most of all provided us with an amazing workplace where we made new friends.</p>
+                            <p>Although the workshop and tournament lasted about a month, organization of the event took
+                                months of hard work. We thank the iGEM teams who dedicated many working hours, provided
+                                their social media platforms, helped us with the calendar and most of all provided us
+                                with an amazing workplace where we made new friends.</p>
                         </div>
                         <p class=" pt-5">We also want to thank the speakers and judges who helped us supervise the
                             event, always
                             giving us continuous feedback so that all participants can improve their debate skills.</p>
 
-                        <p>We also want to thank the speakers and judges who helped us supervise the event and always provided us with continuous feedback. Thank all the participants who gave their time selflessly to learn more about these types of tools and skills to defend their positions in a more informed way. Finally, we thank all of the iGEM Bolivia staff who helped us with the workshops, and in the collection of information throughout the event - they are exceptional people and we are truly grateful for them!</p>
-                        
+                        <p>We also want to thank the speakers and judges who helped us supervise the event and always
+                            provided us with continuous feedback. Thank all the participants who gave their time
+                            selflessly to learn more about these types of tools and skills to defend their positions in
+                            a more informed way. Finally, we thank all of the iGEM Bolivia staff who helped us with the
+                            workshops, and in the collection of information throughout the event - they are exceptional
+                            people and we are truly grateful for them!</p>
+
 
                         <div class="row m-0 p-0">
                             <div class="offset-md-3 col-md-8">
@@ -680,8 +730,6 @@
 
 
 
-
-
 </body>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
@@ -697,43 +745,12 @@
         let y = window.scrollY;
         if (y >= 500) {
             document.getElementById('nav').classList.add('my-nav')
-            document.getElementById('menuLat3').classList.remove('menulatOculto')
         } else {
             document.getElementById('nav').classList.remove('my-nav')
-            document.getElementById('menuLat3').classList.add('menulatOculto')
 
         }
     })
 </script>
-
-<script>
-    let colores = {
-        1: [
-            { '--celeste': '#d12691' },
-            { '--azul': '#d12691' },
-            { '--verde': '#ff5722' },
-            { '--bg-azul': '#d12691' },
-        ]
-    }
-
-    function aleatorio() {
-        alert("Se cambian los colores a alazar")
-        document.documentElement.style.setProperty('--celeste', '#d12691');
-        document.documentElement.style.setProperty('--azul', '#d12691');
-        document.documentElement.style.setProperty('--verde', '#ff5722');
-        document.documentElement.style.setProperty('--bg-azul', '#ff57223b');
-        console.log(colores)
-    }
-
-    function modoNocturno() {
-        document.getElementById('body').style.backgroundColor = '#011d2c';
-        document.getElementById('body').style.color = '#fff';
-        // document.querySelectorAll('p').style.color='#ffffff';
-        document.documentElement.style.setProperty('--celeste', '#d12691');
-        document.documentElement.style.setProperty('--azul', '#d12691');
-        document.documentElement.style.setProperty('--verde', '#ff5722');
-        document.documentElement.style.setProperty('--bg-azul', '#ff57223b');
-    }
-</script>
+<script src="main.js"></script>
 
 </html>

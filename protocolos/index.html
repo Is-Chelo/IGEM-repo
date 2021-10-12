@@ -1,4 +1,3 @@
-
 <html lang="en">
 
 <head>
@@ -11,6 +10,7 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="protocolos.css">
+    <link rel="stylesheet" href="../botonflotante.css">
 </head>
 
 <body>
@@ -29,7 +29,8 @@
                     <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item hover-nav">
-                                <a class="nav-link active" aria-current="page" href="collaborat/index.html">COLLABORATIONS</a>
+                                <a class="nav-link active" aria-current="page"
+                                    href="collaborat/index.html">COLLABORATIONS</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -39,7 +40,7 @@
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">DESCRIPCION</a></li>
                                     <li><a class="dropdown-item" href="#">DESING</a></li>
-                                        <li>
+                                    <li>
                                         <hr class="dropdown-divider">
                                     </li>
                                     <li><a class="dropdown-item" href="Engineering/index.html">ENGINEERNING</a></li>
@@ -54,7 +55,7 @@
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
+                                    <li>
                                         <hr class="dropdown-divider">
                                     </li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -98,7 +99,8 @@
                                 </h4>
                             </div>
                             <h1 class="text-center text-md-start text-white titulo-principal">DESIGN</h1>
-                            <p class="text-white text-white text-sm-center text-md-start">The work begins starting with
+                            <p class="text-white text-white text-sm-center text-md-start" style="font-size: 20px;">The
+                                work begins starting with
                                 the
                                 design of the bioparts</p>
                         </div>
@@ -111,1184 +113,1273 @@
                 </div>
             </div>
     </header>
+    <!-- BOTON FLOTANTE -->
+    <div class="wrapper">
+        <input type="checkbox" />
+        <div class="fab"></div>
+        <div class="fac">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Up"><i
+                    class="fas fa-chevron-up"></i></a>
+            <a type="button" onclick="aleatorio()" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Random Color"><i class="fas fa-random"></i></a>
+            <a onclick="modoNocturno()" id="luna" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Dark Mode"><i class="fas fa-moon"></i></a>
+            <a onclick="modoDia()" id="sol" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sun Mode"><i
+                    class="fas fa-sun"></i></a>
+
+            <a onclick="aumentarLetras()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Letter ++"><i
+                    class="fas fa-search-plus"></i></a>
+            <a onclick="disminuirLetras()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Letter --"><i
+                    class="fas fa-search-minus"></i></a>
+        </div>
+    </div>
+
+    <body id="body">
 
 
-    <section>
-        <div class="container">
+        <section>
+            <div class="container">
 
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="Imagenes Design/Plasmido azul.png" alt="" class="w-100 ">
-                </div>
-                <div class="col-md-8  d-flex align-items-center mb-3">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="Imagenes Design/Plasmido azul.png" alt="" class="w-100 ">
+                    </div>
+                    <div class="col-md-8  d-flex align-items-center mb-3">
+                        <p>
+                            The development of whole-cell biosensors for heavy metals is widely described in the
+                            literature,
+                            within the iGEM competition many teams have explored various well-established design
+                            approaches.
+                            In an attempt to differentiate ourselves our team has decided to take a less explored
+                            approach
+                            for the design of <strong>our arsenic biosensor, based initalt on the work of Wang et
+                                al.1</strong> It relies mainly on 3 strategies:
+                        </p>
+                    </div>
+                    <h2 class="text-azul mt-5 mb-4">
+                        I. Control of intracellular density of arsR protein
+                    </h2>
                     <p>
-                        The development of whole-cell biosensors for heavy metals is widely described in the literature,
-                        within the iGEM competition many teams have explored various well-established design approaches.
-                        In an attempt to differentiate ourselves our team has decided to take a less explored approach
-                        for the design of <strong>our arsenic biosensor, based initalt on the work of Wang et
-                            al.1</strong> It relies mainly on 3 strategies:
+                        Normally arsR regulates its own expression within the arsRDABC operon2 and in whole-cell
+                        biosensors
+                        with a more conventional design, <strong>recent studies have been conducted where the expression
+                            of
+                            arsR has been placed under the control of constitutive promoters of different strengths,
+                            this
+                            has resulted in a finer and more comprehensive control of outputs.(3) </strong>
+                    </p>
+                    <p>
+                        A weak constitutive promoter controlling arsR expression results in a lower concentration of
+                        arsR
+                        protein in the bacterial cytosol, loosening the control of the expression that it exerts and the
+                        minimum concentration of arsenic necessary to activate the genetic constructs, in other words,
+                        the
+                        detection limit of the biosensor is improved. On the other hand, if an arsenic biosensor with a
+                        sensitivity for higher concentrations is required, the promoter can be changed to one of greater
+                        strength.
                     </p>
                 </div>
-                <h2 class="text-azul mt-5 mb-4">
-                    I. Control of intracellular density of arsR protein
-                </h2>
+
+            </div>
+        </section>
+
+        <div class="banner-img">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-5 d-flex align-items-center text-md-end mb-3">
+                        <p class="txt"><strong>Figure 1.</strong>Adjusting the intracellular receptor concentration
+                            allows manipulating the detection limit of the biosensor. a) Strong constitutive promoter:
+                            higher concentration of ArsR results in a higher concentration of Arsenic for the activation
+                            of
+                            the constructs. b) Weak constitutive promoter: lower ArsR concentration results in a lower
+                            Arsenic concentration for the activation of the constructs.</p>
+                    </div>
+                    <div class=" offset-md-1 col-md-6">
+
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            data-bs-content="Click Me, Please" onclick="showModal('modal1')">
+                            <div class="row m-0 p-0 text-center d-lg-none">
+                                <small class="text-white">Click me, Please</small>
+                            </div>
+                            <img src="Imagenes Design/T--Bolivia--design_fig1.png" alt="" class="img click-img">
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <section>
+            <div class="container">
+                <h2 class="text-azul mb-4">II. Using simple and cascading transcriptional amplifiers</h2>
+                <p>Upon activation of the constructs, <strong>the transcriptional signal generated will be received by
+                        the
+                        HrpRS and/or RinA amplifier systems and will be scaled by a gain factor to produce an enhanced
+                        output signal.</strong> Being able to predictably scale a transcriptional signal provides a new
+                    level of control and flexibility over the outputs of genetic constructs where low-level or saturated
+                    transcription signals must be scaled to increase sensitivity. Like its electronic counterparts,
+                    amplifier engineering is critically valuable in customizing signal processing in cells for various
+                    applications.4 4</p>
                 <p>
-                    Normally arsR regulates its own expression within the arsRDABC operon2 and in whole-cell biosensors
-                    with a more conventional design, <strong>recent studies have been conducted where the expression of
-                        arsR has been placed under the control of constitutive promoters of different strengths, this
-                        has resulted in a finer and more comprehensive control of outputs.(3) </strong>
-                </p>
-                <p>
-                    A weak constitutive promoter controlling arsR expression results in a lower concentration of arsR
-                    protein in the bacterial cytosol, loosening the control of the expression that it exerts and the
-                    minimum concentration of arsenic necessary to activate the genetic constructs, in other words, the
-                    detection limit of the biosensor is improved. On the other hand, if an arsenic biosensor with a
-                    sensitivity for higher concentrations is required, the promoter can be changed to one of greater
-                    strength.
+                    <strong>HrpRS system :</strong> it is composed by the genetic components <strong>(hrpRS
+                        and PhrpL)</strong> of the regulatory network of the hrp gene (hypersensitive
+                    reaction and pathogenicity) for type III secretion in Pseudomonas
+                    syringae . Activating hrpR and hrpS proteins results in the formation
+                    of an ultrasensitive complex which binds a sequence up-stream the
+                    hrpL promoter (σ54 factor dependent) for remodeling the closed
+                    transcription σ54-RNAP-hrpL complex into a open one through ATP
+                    hydrolysis for finally promoting transcription. (5)
                 </p>
             </div>
+        </section>
 
-        </div>
-    </section>
 
-    <div class="banner-gradient-anim"></div>
-    <div class="banner-img">
-        <div class="container">
-            <div class="row ">
-                <div class="col-md-5 d-flex align-items-center text-md-end mb-3">
-                    <p class="text-white"><strong>Figure 1.</strong>Adjusting the intracellular receptor concentration
-                        allows manipulating the detection limit of the biosensor. a) Strong constitutive promoter:
-                        higher concentration of ArsR results in a higher concentration of Arsenic for the activation of
-                        the constructs. b) Weak constitutive promoter: lower ArsR concentration results in a lower
-                        Arsenic concentration for the activation of the constructs.</p>
+        <div class="banner-img-inv">
+            <div class="container">
+                <div class="row ">
+                    <div class=" offset-md-1 col-md-6 mb-5">
+
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            data-bs-content="Click Me, Please" onclick="showModal('modal2')">
+                            <div class="row m-0 p-0 text-center d-lg-none">
+                                <small class="text-white mt-3">Click me, Please</small>
+                            </div>
+                            <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig2/T--Bolivia--design_fig2.1.png"
+                                alt="" class="img click-img">
+
+                        </span>
+
+                    </div>
+                    <div class="col-md-5 d-flex align-items-center text-md-end ">
+                        <p class="txt"><strong>Figure 2.</strong> The HrpR and HrpS proteins form a hexameric complex
+                            that functions as an enhancer element that comes into contact with RNA polymerase and σ54
+                            factor, which in turn are positioned on the PhrpL promoter, activating transcription in an
+                            ultra-sensitive and amplified way.</p>
+                    </div>
+
                 </div>
-                <div class=" offset-md-1 col-md-6">
-                    <!-- <img src="Imagenes Design/T--Bolivia--design_fig1.png" alt="" class="img"> -->
+            </div>
+        </div>
 
+        <div class="container mt-5 ">
+            <p class="">
+                <strong>RinA system : </strong> consists of a family of phage-encoded proteins that
+                act as activators for the transcription of late operons in a large
+                group of Staphylococcus aureus phages . It has the ability to bind
+                to the PrinA_p80 promoter sequence where it promotes
+                transcription of down-stream elements in an ultrasensitive way. (6)
+            </p>
+        </div>
+        <section>
+            <div class="container">
+                <h2 class="text-azul mb-4">III. Chromoprotein as a reporter</h2>
+                <p>
+                    After processing the transcriptional signal, it is necessary to convert it to a
+                    measurable type of signal,<strong>in our case this is possible through the use of a
+                        reporter gene that produces a colored protein observable to the naked eye.</strong>
+                    Chromoproteins have certain advantages over other fluorescent proteins,
+                    such as having dark colors under ambient light that allow inexpensive
+                    analysis without specialized instruments. They also avoid problems due to
+                    background fluorescence, UV-induced bleaching, cell damage, and the
+                    need for eye and skin protection. Applications of chromoproteins include
+                    markers in living organisms for cloning (7), teaching (8) and biosensors. (9)
+                </p>
+            </div>
+        </section>
+
+        <div class="banner-gradient-anim"></div>
+        <div class="banner-img">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-5 d-flex align-items-center text-md-end mb-5">
+                        <p class="txt"><strong>Figure 3.</strong> Adjusting the intracellular
+                            receptor concentration allows manipulating
+                            the detection limit of the biosensor. a)
+                            Strong constitutive promoter: higher
+                            concentration of ArsR results in a higher
+                            concentration of Arsenic for the activation
+                            of the constructs. b) Weak constitutive
+                            promoter: lower ArsR concentration results
+                            in a lower Arsenic concentration for the
+                            activation of the constructs.</p>
+                    </div>
+                    <div class=" offset-md-1 col-md-6">
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            data-bs-content="Click Me, Please" onclick="showModal('modal3')">
+                            <div class="row m-0 p-0 text-center d-lg-none">
+                                <small class="text-white">Click me, Please</small>
+                            </div>
+                            <img src="Imagenes Design/T--Bolivia--design_fig1.png" alt="" class="img click-img">
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <p class="">
+                <strong>mRFP1E Chromoprotein:</strong> its a variant of the monomeric red fluorescent
+                protein 1 (mRFP1) gene that was codon optimized for E. coli (abbreviated
+                mRFP1E). <strong>It produces a dark red color observable to the naked eye and
+                    has a fluorescent capacity with an excitation spectrum at 582 nm and an
+                    emission spectrum at 606 nm.</strong> Is low molecular weight (55 kDa ) and it has
+                been reported that its toxicity on E. coli is considerably lower than other
+                chromoproteins, which is a great advantage for its use as a reporter, its
+                maturation time is 18 - 24 hours in the presence of oxygen. Orange, pink,
+                magenta and violet color variants have also been generated with the same
+                characteristics (10)
+            </p>
+            <p>Red fluorescent proteins such as mRFP1 have an absorption spectrum
+                that can overlap with optical density measurements of cultures at 600 nm
+                (OD600), causing interference and overestimations.111 <strong>For this reason we
+                    have opted for the violet variant of this chromoprotein, mRFP1-Violet , its
+                    absorption spectrum is in the region of 350 - 450 nm, eliminating the
+                    interferences with OD600.</strong> It has been generated by mutations of the
+                original chromoprotein fluorophore site and <strong>retains its characteristics such
+                    as fluorescence, maturation time and low toxicity. (10)</strong></p>
+        </div>
+
+        <section>
+            <div class="container">
+                <h2 class="text-center text-azul mb-4">ARSENITO IN DETAIL</h2>
+                <p>We apply the aforementioned strategies to generate 4 genetic constructs
+                    that offer different ranges of sensitivity to arsenic. <strong>Transformed into 4
+                        different E. coli BL21 strains, we can generate traffic light patterns visible
+                        to the naked eye and easy to interpret.</strong></p>
+            </div>
+        </section>
+
+        <div class="banner-img">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-5 d-flex align-items-center text-md-end mb-3">
+                        <p class="txt"><strong>Figure 4.</strong>The different arsenic
+                            sensitivities of the constructs
+                            allow semi-quantitative
+                            interpretation of results by
+                            means of traffic light patterns
+                            observable with the naked eye.</p>
+                    </div>
+                    <div class=" offset-md-1 col-md-6">
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            data-bs-content="Click Me, Please" onclick="showModal('modal4')">
+                            <div class="row m-0 p-0 text-center d-lg-none">
+                                <small class="text-white">Click me, Please</small>
+                            </div>
+                            <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig4/T--Bolivia--design_fig4.1.png"
+                                alt="" class="img click-img">
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+                <h2 class="text-azul mb-4">1. As0 Construct (≥ 0.5 ppb [As] sensitivity):</h2>
+                <p>The detection module consists of a weak constitutive promoter
+                    <strong>(BBa_J23109)</strong> that is in charge of the expression of the arsR protein
+                    <strong>(BBa_J15101)</strong> , next is the processing module that is made up by
+                    <strong>Pars</strong>
+                    inducible promoter <strong>(BBa_K190015)</strong>, which receives the transcriptional
+                    signal, and a <strong>double amplifying cascade (HrpRS-pHrpL-RinA)</strong>, finally is the
+                    output module made up by an inducible promoter <strong>pRinA-p80</strong> that receives
+                    the amplified signal of the cascade and promotes the expression of the
+                    reporter gene <strong>mRFP1 -Violet.</strong>
+                </p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
                     <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
-                        data-bs-content="Click Me, Please" onclick="showModal('modal1')">
+                        data-bs-content="Click Me, Please" onclick="showModal('modal5')">
                         <div class="row m-0 p-0 text-center d-lg-none">
                             <small class="text-white">Click me, Please</small>
                         </div>
-                        <img src="Imagenes Design/T--Bolivia--design_fig1.png" alt="" class="img click-img">
+                        <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_1.1.png"
+                            alt="" class="img click-img">
+
+                    </span>
+                </div>
+                <div class="col-md-6">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                        data-bs-content="Click Me, Please" onclick="showModal('modal5')">
+                        <div class="row m-0 p-0 text-center d-lg-none">
+                            <small class="text-white">Click me, Please</small>
+                        </div>
+                        <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.1.png"
+                            alt="" class="img click-img">
 
                     </span>
                 </div>
             </div>
+
+
         </div>
-    </div>
 
 
 
-    <section>
+        <section>
+            <div class="container">
+                <h2 class="text-azul mb-4">2. As2 Construct(≥ 3 ppb [As] Sensitivity):</h2>
+                <p>The detection module consists of a weak constitutive promoter
+                    <strong>(BBa_J23109)</strong> that is in charge of the expression of the arsR protein
+                    <strong>(BBa_J15101)</strong>, next is the processing module that is made up by
+                    <strong>Pars</strong>
+                    inducible promoter <strong>(BBa_K190015)</strong> , which receives the transcriptional
+                    signal, and a <strong>simple transcriptional amplifier (HrpRS)</strong> , finally is the output
+                    module made up by an inducible pHrpL promoter that receives the
+                    amplified signal from the cascade and promotes the expression of the
+                    reporter gene mRFP-Violet.
+                </p>
+            </div>
+        </section>
+
         <div class="container">
-            <h2 class="text-azul mb-4">II. Using simple and cascading transcriptional amplifiers</h2>
-            <p>Upon activation of the constructs, <strong>the transcriptional signal generated will be received by the
-                    HrpRS and/or RinA amplifier systems and will be scaled by a gain factor to produce an enhanced
-                    output signal.</strong> Being able to predictably scale a transcriptional signal provides a new
-                level of control and flexibility over the outputs of genetic constructs where low-level or saturated
-                transcription signals must be scaled to increase sensitivity. Like its electronic counterparts,
-                amplifier engineering is critically valuable in customizing signal processing in cells for various
-                applications.4 4</p>
-            <p>
-                <strong>HrpRS system :</strong> it is composed by the genetic components <strong>(hrpRS
-                    and PhrpL)</strong> of the regulatory network of the hrp gene (hypersensitive
-                reaction and pathogenicity) for type III secretion in Pseudomonas
-                syringae . Activating hrpR and hrpS proteins results in the formation
-                of an ultrasensitive complex which binds a sequence up-stream the
-                hrpL promoter (σ54 factor dependent) for remodeling the closed
-                transcription σ54-RNAP-hrpL complex into a open one through ATP
-                hydrolysis for finally promoting transcription. (5)
-            </p>
-        </div>
-    </section>
-
-
-    <div class="banner-gradient-anim-morado"></div>
-    <div class="banner-img-inv">
-        <div class="container">
-            <div class="row ">
-                <div class=" offset-md-1 col-md-6 mb-5">
-
+            <div class="row">
+                <div class="col-md-6">
                     <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
-                        data-bs-content="Click Me, Please" onclick="showModal('modal2')">
+                        data-bs-content="Click Me, Please" onclick="showModal('modal6')">
                         <div class="row m-0 p-0 text-center d-lg-none">
-                            <small class="text-white mt-3">Click me, Please</small>
+                            <small class="text-white">Click me, Please</small>
                         </div>
                         <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig2/T--Bolivia--design_fig2.1.png"
                             alt="" class="img click-img">
 
                     </span>
-
                 </div>
-                <div class="col-md-5 d-flex align-items-center text-md-end ">
-                    <p class="text-white"><strong>Figure 2.</strong> The HrpR and HrpS proteins form a hexameric complex
-                        that functions as an enhancer element that comes into contact with RNA polymerase and σ54
-                        factor, which in turn are positioned on the PhrpL promoter, activating transcription in an
-                        ultra-sensitive and amplified way.</p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="container mt-5 mt-lg-0">
-        <p class="">
-            <strong>RinA system : </strong> consists of a family of phage-encoded proteins that
-            act as activators for the transcription of late operons in a large
-            group of Staphylococcus aureus phages . It has the ability to bind
-            to the PrinA_p80 promoter sequence where it promotes
-            transcription of down-stream elements in an ultrasensitive way. (6)
-        </p>
-    </div>
-    <section>
-        <div class="container">
-            <h2 class="text-azul mb-4">III. Chromoprotein as a reporter</h2>
-            <p>
-                After processing the transcriptional signal, it is necessary to convert it to a
-                measurable type of signal,<strong>in our case this is possible through the use of a
-                    reporter gene that produces a colored protein observable to the naked eye.</strong>
-                Chromoproteins have certain advantages over other fluorescent proteins,
-                such as having dark colors under ambient light that allow inexpensive
-                analysis without specialized instruments. They also avoid problems due to
-                background fluorescence, UV-induced bleaching, cell damage, and the
-                need for eye and skin protection. Applications of chromoproteins include
-                markers in living organisms for cloning (7), teaching (8) and biosensors. (9)
-            </p>
-        </div>
-    </section>
-
-    <div class="banner-gradient-anim"></div>
-    <div class="banner-img">
-        <div class="container">
-            <div class="row ">
-                <div class="col-md-5 d-flex align-items-center text-md-end mb-5">
-                    <p class="text-white"><strong>Figure 3.</strong> Adjusting the intracellular
-                        receptor concentration allows manipulating
-                        the detection limit of the biosensor. a)
-                        Strong constitutive promoter: higher
-                        concentration of ArsR results in a higher
-                        concentration of Arsenic for the activation
-                        of the constructs. b) Weak constitutive
-                        promoter: lower ArsR concentration results
-                        in a lower Arsenic concentration for the
-                        activation of the constructs.</p>
-                </div>
-                <div class=" offset-md-1 col-md-6">
+                <div class="col-md-6">
                     <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
-                        data-bs-content="Click Me, Please" onclick="showModal('modal3')">
+                        data-bs-content="Click Me, Please" onclick="showModal('modal6')">
                         <div class="row m-0 p-0 text-center d-lg-none">
                             <small class="text-white">Click me, Please</small>
                         </div>
-                        <img src="Imagenes Design/T--Bolivia--design_fig1.png"
+                        <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig2/T--Bolivia--design_fig2.4.png"
                             alt="" class="img click-img">
 
                     </span>
                 </div>
             </div>
+
+
         </div>
-    </div>
 
-    <div class="container mt-5">
-        <p class="">
-            <strong>mRFP1E Chromoprotein:</strong> its a variant of the monomeric red fluorescent
-            protein 1 (mRFP1) gene that was codon optimized for E. coli (abbreviated
-            mRFP1E). <strong>It produces a dark red color observable to the naked eye and
-                has a fluorescent capacity with an excitation spectrum at 582 nm and an
-                emission spectrum at 606 nm.</strong> Is low molecular weight (55 kDa ) and it has
-            been reported that its toxicity on E. coli is considerably lower than other
-            chromoproteins, which is a great advantage for its use as a reporter, its
-            maturation time is 18 - 24 hours in the presence of oxygen. Orange, pink,
-            magenta and violet color variants have also been generated with the same
-            characteristics (10)
-        </p>
-        <p>Red fluorescent proteins such as mRFP1 have an absorption spectrum
-            that can overlap with optical density measurements of cultures at 600 nm
-            (OD600), causing interference and overestimations.111 <strong>For this reason we
-                have opted for the violet variant of this chromoprotein, mRFP1-Violet , its
-                absorption spectrum is in the region of 350 - 450 nm, eliminating the
-                interferences with OD600.</strong> It has been generated by mutations of the
-            original chromoprotein fluorophore site and <strong>retains its characteristics such
-                as fluorescence, maturation time and low toxicity. (10)</strong></p>
-    </div>
 
-    <section>
+        <section>
+            <div class="container">
+                <h2 class="text-azul mb-4">3. As4 Construct (≥ 10 ppb [As] Sensitivity)</h2>
+                <p>The detection module consists of a constitutive promoter of medium
+                    strength <strong>(BBa_J23115)</strong> that is in charge of the expression of the arsR
+                    protein <strong>(BBa_J15101)</strong> , in this construct a processing module is not
+                    included and immediately afterwards is the output module made up by
+                    <strong>Pars</strong> inducible promoter <strong>(BBa_K190015)</strong> that receives the signal
+                    from
+                    the
+                    detection module and promotes the expression of the reporter gene
+                    <strong>mRFP1-Violet.</strong>
+                </p>
+            </div>
+        </section>
+
         <div class="container">
-            <h2 class="text-center text-azul mb-4">ARSENITO IN DETAIL</h2>
-            <p>We apply the aforementioned strategies to generate 4 genetic constructs
-                that offer different ranges of sensitivity to arsenic. <strong>Transformed into 4
-                    different E. coli BL21 strains, we can generate traffic light patterns visible
-                    to the naked eye and easy to interpret.</strong></p>
+            <div class="row">
+
+                <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                    data-bs-content="Click Me, Please" onclick="showModal('modal7')">
+                    <div class="row m-0 p-0 text-center d-lg-none">
+                        <small class="text-white">Click me, Please</small>
+                    </div>
+                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/fig. 3. mRFP1-violeta.png" alt=""
+                        class="img click-img">
+
+                </span>
+
+            </div>
+
         </div>
-    </section>
 
-    <div class="banner-gradient-anim-morado"></div>
-    <div class="banner-img">
+
+
+        <section>
+            <div class="container">
+                <h2 class="text-azul mb-4">4. As5 Construct (≥ 50 ppb [As] Sensitivity)</h2>
+                <p>The detection module consists of a high-strength constitutive promoter
+                    <strong>(BBa_J23105)</strong> that is in charge of the expression of the arsR protein
+                    <strong>(BBa_J15101)</strong> , a processing module is not included in this construct and
+                    immediately afterwards is the output module made up by the inducible
+                    promoter <strong>Pars (BBa_K190015)</strong> that receives the signal from the detection
+                    module and finally promotes the expression of the reporter gene <strong>mRFP1-
+                        Violet.</strong>
+                </p>
+            </div>
+        </section>
+
         <div class="container">
-            <div class="row ">
-                <div class="col-md-5 d-flex align-items-center text-md-end mb-3">
-                    <p class="text-white"><strong>Figure 4.</strong>The different arsenic
-                        sensitivities of the constructs
-                        allow semi-quantitative
-                        interpretation of results by
-                        means of traffic light patterns
-                        observable with the naked eye.</p>
+            <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                data-bs-content="Click Me, Please" onclick="showModal('modal8')">
+                <div class="row m-0 p-0 text-center d-lg-none">
+                    <small class="text-white">Click me, Please</small>
                 </div>
-                <div class=" offset-md-1 col-md-6">
-                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
-                        data-bs-content="Click Me, Please" onclick="showModal('modal4')">
-                        <div class="row m-0 p-0 text-center d-lg-none">
-                            <small class="text-white">Click me, Please</small>
-                        </div>
-                        <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig4/T--Bolivia--design_fig4.1.png"
-                            alt="" class="img click-img">
+                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig8.png" alt=""
+                    class="img click-img">
 
-                    </span>
-                </div>
-            </div>
+            </span>
+
+
         </div>
-    </div>
 
-    <section>
-        <div class="container">
-            <h2 class="text-azul mb-4">1. As0 Construct (≥ 0.5 ppb [As] sensitivity):</h2>
-            <p>The detection module consists of a weak constitutive promoter
-                <strong>(BBa_J23109)</strong> that is in charge of the expression of the arsR protein
-                <strong>(BBa_J15101)</strong> , next is the processing module that is made up by <strong>Pars</strong>
-                inducible promoter <strong>(BBa_K190015)</strong>, which receives the transcriptional
-                signal, and a <strong>double amplifying cascade (HrpRS-pHrpL-RinA)</strong>, finally is the
-                output module made up by an inducible promoter <strong>pRinA-p80</strong> that receives
-                the amplified signal of the cascade and promotes the expression of the
-                reporter gene <strong>mRFP1 -Violet.</strong>
-            </p>
-        </div>
-    </section>
+        <section>
+            <div class="container">
+                <h2 class="text-azul mb-4">5. Other considerations:</h2>
+                <p>The detection module consists of a high-strength constitutive promoter</p>
+                <ul class="ml-5 lista">
+                    <li>
+                        <p> Strong RBS sequences <strong class="text-azul">(BBa_J34801 and BBa_J34803)</strong> are
+                            located
+                            throughout the constructs coding genes.</p>
+                    </li>
+                    <li>
+                        <p>Terminator sequences <strong class="text-azul">(BBa_B1002)</strong> are positioned at the
+                            end of
+                            each coding gene.</p>
+                    </li>
+                    <li>
+                        <p> All constructs are inserted into pIDTSMART-Kan high-copy plasmids.</p>
+                    </li>
+                </ul>
 
-    <div class="container">
-
-        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
-            data-bs-content="Click Me, Please" onclick="showModal('modal5')">
-            <div class="row m-0 p-0 text-center d-lg-none">
-                <small class="text-white">Click me, Please</small>
             </div>
-            <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig5.png" alt="" class="img click-img">
+        </section>
 
-        </span>
-    </div>
-
-
-
-    <section>
         <div class="container">
-            <h2 class="text-azul mb-4">2. As2 Construct(≥ 3 ppb [As] Sensitivity):</h2>
-            <p>The detection module consists of a weak constitutive promoter
-                <strong>(BBa_J23109)</strong> that is in charge of the expression of the arsR protein
-                <strong>(BBa_J15101)</strong>, next is the processing module that is made up by <strong>Pars</strong>
-                inducible promoter <strong>(BBa_K190015)</strong> , which receives the transcriptional
-                signal, and a <strong>simple transcriptional amplifier (HrpRS)</strong> , finally is the output
-                module made up by an inducible pHrpL promoter that receives the
-                amplified signal from the cascade and promotes the expression of the
-                reporter gene mRFP-Violet.
-            </p>
+            <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/Plasmido celeste.png" alt=""
+                class="w-50 img-back">
         </div>
-    </section>
-
-    <div class="container">
-
-        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
-            data-bs-content="Click Me, Please" onclick="showModal('modal6')">
-            <div class="row m-0 p-0 text-center d-lg-none">
-                <small class="text-white">Click me, Please</small>
-            </div>
-            <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig6.png" alt="" class="img click-img">
-
-        </span>
-
-    </div>
 
 
-    <section>
-        <div class="container">
-            <h2 class="text-azul mb-4">3. As4 Construct (≥ 10 ppb [As] Sensitivity)</h2>
-            <p>The detection module consists of a constitutive promoter of medium
-                strength <strong>(BBa_J23115)</strong> that is in charge of the expression of the arsR
-                protein <strong>(BBa_J15101)</strong> , in this construct a processing module is not
-                included and immediately afterwards is the output module made up by
-                <strong>Pars</strong> inducible promoter <strong>(BBa_K190015)</strong> that receives the signal from
-                the
-                detection module and promotes the expression of the reporter gene
-                <strong>mRFP1-Violet.</strong>
-            </p>
-        </div>
-    </section>
-
-    <div class="container">
-        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
-            data-bs-content="Click Me, Please" onclick="showModal('modal7')">
-            <div class="row m-0 p-0 text-center d-lg-none">
-                <small class="text-white">Click me, Please</small>
-            </div>
-            <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig7.png" alt="" class="img click-img">
-
-        </span>
-    </div>
-
-
-
-    <section>
-        <div class="container">
-            <h2 class="text-azul mb-4">4. As5 Construct (≥ 50 ppb [As] Sensitivity)</h2>
-            <p>The detection module consists of a high-strength constitutive promoter
-                <strong>(BBa_J23105)</strong> that is in charge of the expression of the arsR protein
-                <strong>(BBa_J15101)</strong> , a processing module is not included in this construct and
-                immediately afterwards is the output module made up by the inducible
-                promoter <strong>Pars (BBa_K190015)</strong> that receives the signal from the detection
-                module and finally promotes the expression of the reporter gene <strong>mRFP1-
-                    Violet.</strong>
-            </p>
-        </div>
-    </section>
-
-    <div class="container">
-        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
-            data-bs-content="Click Me, Please" onclick="showModal('modal8')">
-            <div class="row m-0 p-0 text-center d-lg-none">
-                <small class="text-white">Click me, Please</small>
-            </div>
-            <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig8.png" alt="" class="img click-img">
-
-        </span>
-
-
-    </div>
-
-    <section>
-        <div class="container">
-            <h2 class="text-azul mb-4">5. Other considerations:</h2>
-            <p>The detection module consists of a high-strength constitutive promoter</p>
-            <ul class="ml-5 lista">
-                <li>Strong RBS sequences <strong class="text-morado">(BBa_J34801 and BBa_J34803)</strong> are located
-                    throughout the constructs coding genes.</li>
+        <div class="container mt-5">
+            <h2 class="text-morado mb-4">References</h2>
+            <ol class="lista">
                 <li>
-                    Terminator sequences <strong class="text-morado">(BBa_B1002)</strong> are positioned at the end of
-                    each coding gene.
+                    <p>
+                        Wan, X.; Volpetti, F.; Petrova, E.; French, C.; Maerkl, S. J.; Wang, B. Cascaded Amplifying
+                        Circuits
+                        Enable Ultrasensitive Cellular Sensors for Toxic Metals. Nature Chemical Biology 2019, 15 (5),
+                        540–548.
+                        <a href="https://doi.org/10.1038/s41589-019-0244-3" target="_blank">visit the page</a>.
+                    </p>
+                </li>
+
+                <li>
+                    <p> Li, S.; Rosen, B. P.; Borges-Walmsley, M. I.; Walmsley, A. R. Evidence for Cooperativity between
+                        the
+                        Four Binding Sites of Dimeric ArsD, an As(III)-Responsive Transcriptional Regulator *. Journal
+                        of
+                        Biological Chemistry 2002, 277 (29), 25992–26002. <a
+                            href="https://doi.org/10.1074/jbc.M201619200" target="_blank">visit the page</a>.</p>
+                </li>
+
+                <li>
+                    <p> Wang, B.; Barahona, M.; Buck, M. Amplification of Small Molecule-Inducible Gene Expression via
+                        Tuning of
+                        Intracellular Receptor Densities. Nucleic Acids Research 2015, 43 (3), 1955–1964. <a
+                            href=" https://doi.org/10.1093/nar/gku1388" target="_blank">visit the page</a>.</p>
+                </li>
+
+                <li>
+                    <p> Wang, B.; Barahona, M.; Buck, M. Engineering Modular and Tunable Genetic Amplifiers for Scaling
+                        Transcriptional Signals in Cascaded Gene Networks. Nucleic Acids Res 2014, 42 (14), 9484–9492.
+                        <a href="https://doi.org/10.1093/nar/gku593" target="_blank">visit the page</a>.</p>
+                </li>
+
+                <li>
+                    <p> Jovanovic, M.; James, E. H.; Burrows, P. C.; Rego, F. G. M.; Buck, M.; Schumacher, J. Regulation
+                        of the
+                        Co-Evolved HrpR and HrpS AAA+ Proteins Required for Pseudomonas Syringae Pathogenicity. Nat
+                        Commun 2011,
+                        2, 177. <a href="https://doi.org/10.1038/ncomms1177" target="_blank">visit the page</a>.</p>
+                </li>
+
+                <li>
+                    <p> Ferrer, M. D.; Quiles-Puchalt, N.; Harwich, M. D.; Tormo-Más, M. Á.; Campoy, S.; Barbé, J.;
+                        Lasa, Í.;
+                        Novick, R. P.; Christie, G. E.; Penadés, J. R. RinA Controls Phage-Mediated Packaging and
+                        Transfer of
+                        Virulence Genes in Gram-Positive Bacteria. Nucleic Acids Research 2011, 39 (14), 5866–5878. <a
+                            href="https://doi.org/10.1093/nar/gkr158" target="_blank">visit the page</a>.</p>
+                </li>
+
+
+                <li>
+                    <p> Andreou, A. I.; Nakayama, N. Mobius Assembly: A Versatile Golden-Gate Framework towards
+                        Universal DNA
+                        Assembly. PLoS One 2018, 13 (1), e0189892. <a
+                            href="https://doi.org/10.1371/journal.pone.0189892" target="_blank">visit the page</a>.</p>
+                </li>
+
+                <li>
+                    <p> Liljeruhm, J.; Gullberg, E.; Forster, A. C. Synthetic Biology: A Lab Manual; WORLD SCIENTIFIC,
+                        2014. <a href="https://doi.org/10.1142/9061" target="_blank">visit the page</a>.</p>
+                </li>
+
+                <li>
+                    <p> Riangrungroj, P.; Bever, C. S.; Hammock, B. D.; Polizzi, K. M. A Label-Free Optical Whole-Cell
+                        Escherichia Coli Biosensor for the Detection of Pyrethroid Insecticide Exposure. Scientific
+                        Reports
+                        2019, 9 (1), 12466. <a href="https://doi.org/10.1038/s41598-019-48907-6" target="_blank">visit
+                            the
+                            page</a>.</p>
+                </li>
+
+                <li>
+                    <p>Bao, L.; Menon, P. N. K.; Liljeruhm, J.; Forster, A. C. Overcoming Chromoprotein Limitations by
+                        Engineering a Red Fluorescent Protein. Analytical Biochemistry 2020, 611, 113936. <a
+                            href="https://doi.org/10.1016/j.ab.2020.113936" target="_blank">visit the page</a>.</p>
                 </li>
                 <li>
-                    All constructs are inserted into pIDTSMART-Kan high-copy plasmids.
+                    <p> Hecht, A.; Endy, D.; Salit, M.; Munson, M. S. When Wavelengths Collide: Bias in Cell Abundance
+                        Measurements Due to Expressed Fluorescent Proteins. ACS Synth Biol 2016, 5 (9), 1024–1027. <a
+                            href="https://doi.org/10.1021/acssynbio.6b00072" target="_blank">visit the page</a>.</p>
                 </li>
-            </ul>
-
+            </ol>
         </div>
-    </section>
-
-    <div class="container">
-        <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/Plasmido celeste.png" alt="" class="w-50 img-back">
-    </div>
 
 
-    <div class="container mt-5">
-        <h2 class="text-morado mb-4">References</h2>
-        <ol class="lista">
-            <li>
-                Wan, X.; Volpetti, F.; Petrova, E.; French, C.; Maerkl, S. J.; Wang, B. Cascaded Amplifying Circuits
-                Enable Ultrasensitive Cellular Sensors for Toxic Metals. Nature Chemical Biology 2019, 15 (5), 540–548.
-                <a href="https://doi.org/10.1038/s41589-019-0244-3" target="_blank">visit the page</a>.
-            </li>
+        <br><br><br><br><br><br><br><br><br><br>
 
-            <li>
-                Li, S.; Rosen, B. P.; Borges-Walmsley, M. I.; Walmsley, A. R. Evidence for Cooperativity between the
-                Four Binding Sites of Dimeric ArsD, an As(III)-Responsive Transcriptional Regulator *. Journal of
-                Biological Chemistry 2002, 277 (29), 25992–26002. <a href="https://doi.org/10.1074/jbc.M201619200"
-                    target="_blank">visit the page</a>.
-            </li>
+        <!-- Primer modal-->
+        <div class="modal fade my-modal" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content "
+                    style="background-image: linear-gradient(to right, var(--azul), transparent) !important;">
+                    <div class="row d-flex justify-content-end m-0 p-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
 
-            <li>
-                Wang, B.; Barahona, M.; Buck, M. Amplification of Small Molecule-Inducible Gene Expression via Tuning of
-                Intracellular Receptor Densities. Nucleic Acids Research 2015, 43 (3), 1955–1964. <a
-                    href=" https://doi.org/10.1093/nar/gku1388" target="_blank">visit the page</a>.
-            </li>
+                    <div class="modal-body">
 
-            <li>
-                Wang, B.; Barahona, M.; Buck, M. Engineering Modular and Tunable Genetic Amplifiers for Scaling
-                Transcriptional Signals in Cascaded Gene Networks. Nucleic Acids Res 2014, 42 (14), 9484–9492. <a
-                    href="https://doi.org/10.1093/nar/gku593" target="_blank">visit the page</a>.
-            </li>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1">
+                                </button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
 
-            <li>
-                Jovanovic, M.; James, E. H.; Burrows, P. C.; Rego, F. G. M.; Buck, M.; Schumacher, J. Regulation of the
-                Co-Evolved HrpR and HrpS AAA+ Proteins Required for Pseudomonas Syringae Pathogenicity. Nat Commun 2011,
-                2, 177. <a href="https://doi.org/10.1038/ncomms1177" target="_blank">visit the page</a>.
-            </li>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                    aria-label="Slide 3">
 
-            <li>
-                Ferrer, M. D.; Quiles-Puchalt, N.; Harwich, M. D.; Tormo-Más, M. Á.; Campoy, S.; Barbé, J.; Lasa, Í.;
-                Novick, R. P.; Christie, G. E.; Penadés, J. R. RinA Controls Phage-Mediated Packaging and Transfer of
-                Virulence Genes in Gram-Positive Bacteria. Nucleic Acids Research 2011, 39 (14), 5866–5878. <a
-                    href="https://doi.org/10.1093/nar/gkr158" target="_blank">visit the page</a>.
-            </li>
+                                </button>
 
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_1.1.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_1.2.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_1.3.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.1.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.2.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.3.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 
-            <li>
-                Andreou, A. I.; Nakayama, N. Mobius Assembly: A Versatile Golden-Gate Framework towards Universal DNA
-                Assembly. PLoS One 2018, 13 (1), e0189892. <a href="https://doi.org/10.1371/journal.pone.0189892"
-                    target="_blank">visit the page</a>.
-            </li>
-
-            <li>
-                Liljeruhm, J.; Gullberg, E.; Forster, A. C. Synthetic Biology: A Lab Manual; WORLD SCIENTIFIC, 2014. <a
-                    href="https://doi.org/10.1142/9061" target="_blank">visit the page</a>.
-            </li>
-
-            <li>
-                Riangrungroj, P.; Bever, C. S.; Hammock, B. D.; Polizzi, K. M. A Label-Free Optical Whole-Cell
-                Escherichia Coli Biosensor for the Detection of Pyrethroid Insecticide Exposure. Scientific Reports
-                2019, 9 (1), 12466. <a href="https://doi.org/10.1038/s41598-019-48907-6" target="_blank">visit the
-                    page</a>.
-            </li>
-
-            <li>
-                Bao, L.; Menon, P. N. K.; Liljeruhm, J.; Forster, A. C. Overcoming Chromoprotein Limitations by
-                Engineering a Red Fluorescent Protein. Analytical Biochemistry 2020, 611, 113936. <a
-                    href="https://doi.org/10.1016/j.ab.2020.113936" target="_blank">visit the page</a>.
-            </li>
-            <li>
-                Hecht, A.; Endy, D.; Salit, M.; Munson, M. S. When Wavelengths Collide: Bias in Cell Abundance
-                Measurements Due to Expressed Fluorescent Proteins. ACS Synth Biol 2016, 5 (9), 1024–1027. <a
-                    href="https://doi.org/10.1021/acssynbio.6b00072" target="_blank">visit the page</a>.
-            </li>
-        </ol>
-    </div>
-
-
-    <br><br><br><br><br><br><br><br><br><br>
-
-    <!-- Primer modal-->
-    <div class="modal fade my-modal" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content "
-                style="background-image: linear-gradient(to right, var(--azul), transparent) !important;">
-                <div class="row d-flex justify-content-end m-0 p-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-
-                <div class="modal-body">
-
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1">
+                                <i class="fa fa-chevron-left arrow-icons"></i>
+                                <span class="visually-hidden">Previous</span>
                             </button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                                aria-label="Slide 3">
-
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <i class="fa fa-chevron-right arrow-icons"></i>
+                                <span class="visually-hidden">Next</span>
                             </button>
-
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_1.1.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_1.2.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_1.3.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.1.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.2.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.3.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="prev">
 
-                            <i class="fa fa-chevron-left arrow-icons"></i>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="next">
-                            <i class="fa fa-chevron-right arrow-icons"></i>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
 
                 </div>
-
             </div>
         </div>
-    </div>
-    <!-- segundo modal-->
-    <div class="modal fade my-modal" id="modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content "
-                style="background-image: linear-gradient(to right, var(--azul), transparent) !important;">
-                <div class="row d-flex justify-content-end m-0 p-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+        <!-- segundo modal-->
+        <div class="modal fade my-modal" id="modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content "
+                    style="background-image: linear-gradient(to right, var(--azul), transparent) !important;">
+                    <div class="row d-flex justify-content-end m-0 p-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
 
-                <div class="modal-body">
+                    <div class="modal-body">
 
-                    <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1">
+                                </button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="5"
+                                    aria-label="Slide 3">
+
+                                </button>
+
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig2/T--Bolivia--design_fig2.1.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig2/T--Bolivia--design_fig2.2.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig2/T--Bolivia--design_fig2.4.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig2/T--Bolivia--design_fig2.5.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig2/T--Bolivia--design_fig2.6.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig2/T--Bolivia--design_fig3.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+
+                                <i class="fa fa-chevron-left arrow-icons"></i>
+                                <span class="visually-hidden">Previous</span>
                             </button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-
-                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="5"
-                                aria-label="Slide 3">
-
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                                <i class="fa fa-chevron-right arrow-icons"></i>
+                                <span class="visually-hidden">Next</span>
                             </button>
-
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig2/T--Bolivia--design_fig2.1.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig2/T--Bolivia--design_fig2.2.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig2/T--Bolivia--design_fig2.4.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig2/T--Bolivia--design_fig2.5.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig2/T--Bolivia--design_fig2.6.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig2/T--Bolivia--design_fig3.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
-                            data-bs-slide="prev">
 
-                            <i class="fa fa-chevron-left arrow-icons"></i>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
-                            data-bs-slide="next">
-                            <i class="fa fa-chevron-right arrow-icons"></i>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
 
                 </div>
-
             </div>
         </div>
-    </div>
 
 
-    <!-- tercero modal-->
-    <div class="modal fade my-modal" id="modal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content "
-                style="background-image: linear-gradient(to right, var(--azul), transparent) !important;">
-                <div class="row d-flex justify-content-end m-0 p-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+        <!-- tercero modal-->
+        <div class="modal fade my-modal" id="modal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content "
+                    style="background-image: linear-gradient(to right, var(--azul), transparent) !important;">
+                    <div class="row d-flex justify-content-end m-0 p-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
 
-                <div class="modal-body">
+                    <div class="modal-body">
 
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1">
+                                </button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                    aria-label="Slide 3">
+
+                                </button>
+
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_1.1.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_1.2.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_1.3.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.1.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.2.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.3.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+
+                                <i class="fa fa-chevron-left arrow-icons"></i>
+                                <span class="visually-hidden">Previous</span>
                             </button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                                aria-label="Slide 3">
-
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <i class="fa fa-chevron-right arrow-icons"></i>
+                                <span class="visually-hidden">Next</span>
                             </button>
-
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_1.1.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_1.2.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_1.3.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.1.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.2.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.3.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="prev">
 
-                            <i class="fa fa-chevron-left arrow-icons"></i>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="next">
-                            <i class="fa fa-chevron-right arrow-icons"></i>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
 
                 </div>
-
             </div>
         </div>
-    </div>
-    <!-- cuarto modal-->
-    <div class="modal fade my-modal" id="modal4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content "
-                style="background-image: linear-gradient(to right, var(--azul), transparent) !important;">
-                <div class="row d-flex justify-content-end m-0 p-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+        <!-- cuarto modal-->
+        <div class="modal fade my-modal" id="modal4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content "
+                    style="background-image: linear-gradient(to right, var(--azul), transparent) !important;">
+                    <div class="row d-flex justify-content-end m-0 p-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
 
-                <div class="modal-body">
+                    <div class="modal-body">
 
-                    <div id="carouselExampleIndicators4" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1">
+                        <div id="carouselExampleIndicators4" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1">
+                                </button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+
+                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="3"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="4"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="5"
+                                    aria-label="Slide 3">
+
+                                </button>
+
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig4/T--Bolivia--design_fig4.1.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig4/T--Bolivia--design_fig4.2.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig4/T--Bolivia--design_fig4.3.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig4/T--Bolivia--design_fig4.4.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig4/T--Bolivia--design_fig4.5.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig4/T--Bolivia--design_fig4.6.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators4" data-bs-slide="prev">
+
+                                <i class="fa fa-chevron-left arrow-icons"></i>
+                                <span class="visually-hidden">Previous</span>
                             </button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-
-                            <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="3"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="4"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="5"
-                                aria-label="Slide 3">
-
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators4" data-bs-slide="next">
+                                <i class="fa fa-chevron-right arrow-icons"></i>
+                                <span class="visually-hidden">Next</span>
                             </button>
-
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig4/T--Bolivia--design_fig4.1.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig4/T--Bolivia--design_fig4.2.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig4/T--Bolivia--design_fig4.3.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig4/T--Bolivia--design_fig4.4.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig4/T--Bolivia--design_fig4.5.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig4/T--Bolivia--design_fig4.6.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4"
-                            data-bs-slide="prev">
 
-                            <i class="fa fa-chevron-left arrow-icons"></i>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4"
-                            data-bs-slide="next">
-                            <i class="fa fa-chevron-right arrow-icons"></i>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
 
                 </div>
-
             </div>
         </div>
-    </div>
-    <!-- quinto modal-->
-    <div class="modal fade my-modal" id="modal5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content "
-                style="background-image: linear-gradient(to right, var(--azul), transparent) !important;">
-                <div class="row d-flex justify-content-end m-0 p-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+        <!-- quinto modal-->
+        <div class="modal fade my-modal" id="modal5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content "
+                    style="background-image: linear-gradient(to right, var(--azul), transparent) !important;">
+                    <div class="row d-flex justify-content-end m-0 p-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
 
-                <div class="modal-body">
+                    <div class="modal-body">
 
-                    <div id="carouselExampleIndicators5" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1">
+                        <div id="carouselExampleIndicators5" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1">
+                                </button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+
+                                <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="3"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="4"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="5"
+                                    aria-label="Slide 3">
+
+                                </button>
+
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig5/T--Bolivia--design_fig5.1.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig5/T--Bolivia--design_fig5.2.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig5/T--Bolivia--design_fig5.3.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig5/T--Bolivia--design_fig5.4.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig5/T--Bolivia--design_fig5.5.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig5/T--Bolivia--design_fig5.6.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators5" data-bs-slide="prev">
+
+                                <i class="fa fa-chevron-left arrow-icons"></i>
+                                <span class="visually-hidden">Previous</span>
                             </button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-
-                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="3"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="4"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="5"
-                                aria-label="Slide 3">
-
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators5" data-bs-slide="next">
+                                <i class="fa fa-chevron-right arrow-icons"></i>
+                                <span class="visually-hidden">Next</span>
                             </button>
-
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig5/T--Bolivia--design_fig5.1.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig5/T--Bolivia--design_fig5.2.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig5/T--Bolivia--design_fig5.3.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig5/T--Bolivia--design_fig5.4.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig5/T--Bolivia--design_fig5.5.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig5/T--Bolivia--design_fig5.6.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5"
-                            data-bs-slide="prev">
 
-                            <i class="fa fa-chevron-left arrow-icons"></i>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5"
-                            data-bs-slide="next">
-                            <i class="fa fa-chevron-right arrow-icons"></i>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
 
                 </div>
-
             </div>
         </div>
-    </div>
-    <!-- sexto modal-->
-    <div class="modal fade my-modal" id="modal6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content "
-                style="background-image: linear-gradient(to right, var(--azul), transparent) !important;">
-                <div class="row d-flex justify-content-end m-0 p-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+        <!-- sexto modal-->
+        <div class="modal fade my-modal" id="modal6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content "
+                    style="background-image: linear-gradient(to right, var(--azul), transparent) !important;">
+                    <div class="row d-flex justify-content-end m-0 p-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
 
-                <div class="modal-body">
+                    <div class="modal-body">
 
-                    <div id="carouselExampleIndicators6" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1">
+                        <div id="carouselExampleIndicators6" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1">
+                                </button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+
+                                <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="3"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="4"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="5"
+                                    aria-label="Slide 3">
+
+                                </button>
+
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig6/T--Bolivia--design_fig6.1.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig6/T--Bolivia--design_fig6.2.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig6/T--Bolivia--design_fig6.3.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig6/T--Bolivia--design_fig6.4.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig6/T--Bolivia--design_fig6.5.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig6/T--Bolivia--design_fig6.6.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators6" data-bs-slide="prev">
+
+                                <i class="fa fa-chevron-left arrow-icons"></i>
+                                <span class="visually-hidden">Previous</span>
                             </button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-
-                            <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="3"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="4"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="5"
-                                aria-label="Slide 3">
-
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators6" data-bs-slide="next">
+                                <i class="fa fa-chevron-right arrow-icons"></i>
+                                <span class="visually-hidden">Next</span>
                             </button>
-
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig6/T--Bolivia--design_fig6.1.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig6/T--Bolivia--design_fig6.2.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig6/T--Bolivia--design_fig6.3.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig6/T--Bolivia--design_fig6.4.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig6/T--Bolivia--design_fig6.5.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig6/T--Bolivia--design_fig6.6.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators6"
-                            data-bs-slide="prev">
 
-                            <i class="fa fa-chevron-left arrow-icons"></i>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators6"
-                            data-bs-slide="next">
-                            <i class="fa fa-chevron-right arrow-icons"></i>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
 
                 </div>
-
             </div>
         </div>
-    </div>
 
-    <!-- septimo modal-->
-    <div class="modal fade my-modal" id="modal7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content "
-                style="background-image: linear-gradient(to right, var(--azul), transparent) !important;">
-                <div class="row d-flex justify-content-end m-0 p-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+        <!-- septimo modal-->
+        <div class="modal fade my-modal" id="modal7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content "
+                    style="background-image: linear-gradient(to right, var(--azul), transparent) !important;">
+                    <div class="row d-flex justify-content-end m-0 p-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
 
-                <div class="modal-body">
+                    <div class="modal-body">
 
-                    <div id="carouselExampleIndicators7" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1">
+                        <div id="carouselExampleIndicators7" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1">
+                                </button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+
+                                <button type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide-to="3"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide-to="4"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide-to="5"
+                                    aria-label="Slide 3">
+
+                                </button>
+
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig7/T--Bolivia--design_fig7.1.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig7/T--Bolivia--design_fig7.2.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig7/T--Bolivia--design_fig7.3.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig7/T--Bolivia--design_fig7.4.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig7/T--Bolivia--design_fig7.5.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig7/T--Bolivia--design_fig7.6.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators7" data-bs-slide="prev">
+
+                                <i class="fa fa-chevron-left arrow-icons"></i>
+                                <span class="visually-hidden">Previous</span>
                             </button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-
-                            <button type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide-to="3"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide-to="4"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators7" data-bs-slide-to="5"
-                                aria-label="Slide 3">
-
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators7" data-bs-slide="next">
+                                <i class="fa fa-chevron-right arrow-icons"></i>
+                                <span class="visually-hidden">Next</span>
                             </button>
-
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig7/T--Bolivia--design_fig7.1.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig7/T--Bolivia--design_fig7.2.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig7/T--Bolivia--design_fig7.3.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig7/T--Bolivia--design_fig7.4.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig7/T--Bolivia--design_fig7.5.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig7/T--Bolivia--design_fig7.6.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators7"
-                            data-bs-slide="prev">
 
-                            <i class="fa fa-chevron-left arrow-icons"></i>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators7"
-                            data-bs-slide="next">
-                            <i class="fa fa-chevron-right arrow-icons"></i>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
 
                 </div>
-
             </div>
         </div>
-    </div>
 
-    
-    <!-- octavo modal-->
-    <div class="modal fade my-modal" id="modal8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content "
-                style="background-image: linear-gradient(to right, var(--azul), transparent) !important;">
-                <div class="row d-flex justify-content-end m-0 p-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
 
-                <div class="modal-body">
+        <!-- octavo modal-->
+        <div class="modal fade my-modal" id="modal8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content "
+                    style="background-image: linear-gradient(to right, var(--azul), transparent) !important;">
+                    <div class="row d-flex justify-content-end m-0 p-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
 
-                    <div id="carouselExampleIndicators8" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators8" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1">
+                    <div class="modal-body">
+
+                        <div id="carouselExampleIndicators8" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators8" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1">
+                                </button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators8" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators8" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+
+                                <button type="button" data-bs-target="#carouselExampleIndicators8" data-bs-slide-to="3"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators8" data-bs-slide-to="4"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators8" data-bs-slide-to="5"
+                                    aria-label="Slide 3">
+
+                                </button>
+
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig8/T--Bolivia--design_fig8.1.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig8/T--Bolivia--design_fig8.2.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig8/T--Bolivia--design_fig8.3.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig8/T--Bolivia--design_fig8.4.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig8/T--Bolivia--design_fig8.5.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig8/T--Bolivia--design_fig8.6.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators8" data-bs-slide="prev">
+
+                                <i class="fa fa-chevron-left arrow-icons"></i>
+                                <span class="visually-hidden">Previous</span>
                             </button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators8" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators8" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-
-                            <button type="button" data-bs-target="#carouselExampleIndicators8" data-bs-slide-to="3"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators8" data-bs-slide-to="4"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators8" data-bs-slide-to="5"
-                                aria-label="Slide 3">
-
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators8" data-bs-slide="next">
+                                <i class="fa fa-chevron-right arrow-icons"></i>
+                                <span class="visually-hidden">Next</span>
                             </button>
-
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig8/T--Bolivia--design_fig8.1.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig8/T--Bolivia--design_fig8.2.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig8/T--Bolivia--design_fig8.3.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig8/T--Bolivia--design_fig8.4.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig8/T--Bolivia--design_fig8.5.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig8/T--Bolivia--design_fig8.6.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators8"
-                            data-bs-slide="prev">
 
-                            <i class="fa fa-chevron-left arrow-icons"></i>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators8"
-                            data-bs-slide="next">
-                            <i class="fa fa-chevron-right arrow-icons"></i>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
 
                 </div>
-
             </div>
         </div>
-    </div>
 
-    <!-- noveno modal-->
-    <div class="modal fade my-modal" id="modal9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content "
-                style="background-image: linear-gradient(to right, var(--azul), transparent) !important;">
-                <div class="row d-flex justify-content-end m-0 p-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+        <!-- noveno modal-->
+        <div class="modal fade my-modal" id="modal9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content "
+                    style="background-image: linear-gradient(to right, var(--azul), transparent) !important;">
+                    <div class="row d-flex justify-content-end m-0 p-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
 
-                <div class="modal-body">
+                    <div class="modal-body">
 
-                    <div id="carouselExampleIndicators9" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators9" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1">
+                        <div id="carouselExampleIndicators9" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators9" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1">
+                                </button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators9" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators9" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+
+                                <button type="button" data-bs-target="#carouselExampleIndicators9" data-bs-slide-to="3"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators9" data-bs-slide-to="4"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators9" data-bs-slide-to="5"
+                                    aria-label="Slide 3">
+
+                                </button>
+
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig/T--Bolivia--design_fig1_1.1.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_1.2.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_1.3.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.1.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.2.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.3.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators9" data-bs-slide="prev">
+
+                                <i class="fa fa-chevron-left arrow-icons"></i>
+                                <span class="visually-hidden">Previous</span>
                             </button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators9" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators9" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-
-                            <button type="button" data-bs-target="#carouselExampleIndicators9" data-bs-slide-to="3"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators9" data-bs-slide-to="4"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators9" data-bs-slide-to="5"
-                                aria-label="Slide 3">
-
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators9" data-bs-slide="next">
+                                <i class="fa fa-chevron-right arrow-icons"></i>
+                                <span class="visually-hidden">Next</span>
                             </button>
-
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig/T--Bolivia--design_fig1_1.1.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_1.2.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_1.3.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.1.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.2.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Imagenes Design-20211005T150216Z-001/Imagenes Design/T--Bolivia--design_fig1/T--Bolivia--design_fig1_2.3.png"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators9"
-                            data-bs-slide="prev">
 
-                            <i class="fa fa-chevron-left arrow-icons"></i>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators9"
-                            data-bs-slide="next">
-                            <i class="fa fa-chevron-right arrow-icons"></i>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
 
                 </div>
-
             </div>
         </div>
-    </div>
 
-</body>
+    </body>
 
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-    crossorigin="anonymous"></script>
-<script>
-    window.addEventListener('scroll', (e) => {
-        let y = window.scrollY;
-        if (y >= 500) {
-            document.getElementById('nav').classList.add('my-nav')
-        } else {
-            document.getElementById('nav').classList.remove('my-nav')
-        }
-        console.log(y);
-    })
-
-    function navBarColor() {
-        document.getElementById('nav').classList.add('my-nav')
-    }
-
-    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl)
-    })
-
-
-    function showModal(idModal) {
-
-        var modalP = new bootstrap.Modal(document.getElementById(idModal), {
-            keyboard: false
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('scroll', (e) => {
+            let y = window.scrollY;
+            if (y >= 500) {
+                document.getElementById('nav').classList.add('my-nav')
+            } else {
+                document.getElementById('nav').classList.remove('my-nav')
+            }
+            // console.log(y);
         })
-        modalP.show()
-    }
-</script>
+
+        function navBarColor() {
+            document.getElementById('nav').classList.add('my-nav')
+        }
+
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
 
 
+        function showModal(idModal) {
+
+            var modalP = new bootstrap.Modal(document.getElementById(idModal), {
+                keyboard: false
+            })
+            modalP.show()
+        }
+    </script>
+
+    <script src="../main.js"></script>
 
 </html>

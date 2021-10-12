@@ -7,6 +7,7 @@
     --celeste: #00C7DC;
     --morado : #7B0068;
     --verde  : #6DC72A;
+    --bg-celeste  : #d0e7f5c4;
     --font-size-p: 16px ;
 }
 
@@ -263,7 +264,7 @@ figure {
     position: sticky;
     top: 200px;
     border-right: 5px solid;
-    border-color: #00507D;
+    border-color: var(--azul);
     height: 230px;
     display: flex;
     justify-content: center;
@@ -316,9 +317,6 @@ figure {
 }
 
 
-.bg-azul{
-    background-image: linear-gradient(270deg,#00507d33 ,transparent);
-}
 
 
 .lista>li{
@@ -368,7 +366,7 @@ figure {
 
 
 .bg-azul{
-    background-image: linear-gradient(270deg, #00507d1f, transparent);
+    background-image: linear-gradient(270deg, var(--bg-celeste), transparent);
     padding-top:30px ;
     padding-bottom:30px ;
     display: flex;
@@ -378,7 +376,7 @@ figure {
 }
 
 .bg-morado{
-    background-image: linear-gradient(270deg, #7b00682d, transparent);
+    background-image: linear-gradient(270deg, #7b00682d, rgba(255, 255, 255, 0.445));
     padding-top:30px ;
     padding-bottom:30px ;
     display: flex;
