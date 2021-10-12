@@ -8,7 +8,7 @@
     --celeste: #00C7DC;
     --morado : #7B0068;
     --verde  : #6DC72A;
-    --font-size-p: 16px ;
+    --tamanioletras: 16px ;
 }
 
 body {
@@ -32,7 +32,7 @@ section {
 
 p {
     font-family: 'Open Sans', sans-serif;
-    font-size: var(--font-size-p);
+    font-size: var(--tamanioletras);
     line-height: 30px;
 }
 
